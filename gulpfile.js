@@ -29,7 +29,7 @@ var vendors_css = [];
  *  CLEAR DIST
  */
 gulp.task('clear', function() {
-  return del(['dist/*']);
+  return del(['docs/*']);
 });
 
 /**
@@ -39,7 +39,7 @@ gulp.task('clear', function() {
 gulp.task('html', function() {
 	gulp.src('./src/*.html')
 	.pipe(htmlmin({collapseWhitespace: true}))
-	.pipe(gulp.dest('./dist/'));
+	.pipe(gulp.dest('./docs/'));
 });
 
 /**
@@ -49,7 +49,7 @@ gulp.task('html', function() {
 gulp.task('images', [], function(){
 	gulp.src('./src/img/**/*')
 	.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-	.pipe(gulp.dest('./dist/img/'));
+	.pipe(gulp.dest('./docs/img/'));
 });
 
 /**
@@ -58,7 +58,7 @@ gulp.task('images', [], function(){
 
 gulp.task('models', [], function(){
 	gulp.src('./src/models/**/*')
-	.pipe(gulp.dest('./dist/models/'));
+	.pipe(gulp.dest('./docs/models/'));
 });
 
 
@@ -80,7 +80,7 @@ gulp.task('styles', function() {
 	    browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
 	    cascade:  true
 	  }))
-	  .pipe(gulp.dest('././dist/css/'))
+	  .pipe(gulp.dest('././docs/css/'))
 	  .pipe(browserSync.stream());
 });
 
@@ -134,7 +134,7 @@ gulp.task('bundle', ['vendors', 'templates'], function(){
     .pipe(ngAnnotate())
     .pipe(wrap('(function(angular){\n\'use strict\';\n<%= contents %>})(window.angular);'))
     //.pipe(uglify())
-    .pipe(gulp.dest('././dist/js'))
+    .pipe(gulp.dest('././docs/js'))
     .pipe(browserSync.stream());
 });
 
@@ -146,11 +146,11 @@ gulp.task('bundle', ['vendors', 'templates'], function(){
 gulp.task('vendors', function() {
 	gulp.src(vendors_js.map(function(item){ return  'node_modules/' + item; }))
 	  .pipe(concat('vendors.js'))
-	  .pipe(gulp.dest('./dist/js'));
+	  .pipe(gulp.dest('./docs/js'));
 
 	gulp.src(vendors_css.map(function(item){ return  'node_modules/' + item; }))
 	    .pipe(concat('vendors.css'))
-		  .pipe(gulp.dest('./dist/css'));
+		  .pipe(gulp.dest('./docs/css'));
 })
 
 
@@ -160,10 +160,10 @@ gulp.task('vendors', function() {
 
 gulp.task('serve', ['models', 'images', 'styles', 'bundle', 'html'], function() {
 	return browserSync.init({
-	  files: './dist',
+	  files: './docs',
 	  port: 8000,
 	  server: {
-	    baseDir: './dist'
+	    baseDir: './docs'
 	  }
 	});
 });

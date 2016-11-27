@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Bus Gyn",
+    "type": "Progressive Web App",
+    "image": "img/projects/bus-gyn/bus-gyn.jpg",
+    "online": true,
+    "link": "http://gabrielima.github.io/bus-gyn",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "Service Workers"
+    ]
+  },
+  {
+    "name": "MinhaUFG",
+    "type": "Landing Page",
+    "image": "img/projects/minha-ufg/minha-ufg-landing.jpg",
+    "online": true,
+    "link": "http://marceloquinta.github.io/muralUFG/Web",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "MinhaUFG- Admin",
+    "type": "Web Application",
+    "image": "img/projects/minha-ufg/minha-ufg-admin.jpg",
+    "online": true,
+    "link": "http://marceloquinta.github.io/muralUFG/Web",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "AngularJS",
+      "Firebase",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "MinhaUFG - PWA",
+    "type": "Progressive Web App",
+    "image": "img/projects/minha-ufg/minha-ufg-pwa.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Angular 2",
+      "Firebase",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "Image Editing",
+    "type": "Web Application",
+    "image": "img/projects/image-editing/image-editing.jpg",
+    "online": true,
+    "link": "http://gabrielima.github.io/image-editing/",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Calculadoria",
+    "type": "Website",
+    "image": "img/projects/calculadoria/calculadoria.jpg",
+    "online": true,
+    "link": "http://",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Route 66",
+    "type": "E-commerce - Only Front-End",
+    "image": "img/projects/route66/route66.jpg",
+    "online": true,
+    "link": "http://route66mi.com.br",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "FGSL - Fórum Goiano de Software Livre",
+    "type": "Website",
+    "image": "img/projects/fgsl/fgsl.jpg",
+    "online": true,
+    "link": "http://2016.fgsl.net",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Mounza Inc.",
+    "type": "Landing Page",
+    "image": "img/projects/mounza/mounza.jpg",
+    "online": true,
+    "link": "http://mounza.com",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Trak",
+    "type": "Web Application",
+    "image": "img/projects/trak/trak.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "AngularJS",
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Ex Toner",
+    "type": "Website",
+    "image": "img/projects/extoner/extoner.jpg",
+    "online": true,
+    "link": "http://extoner.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Ribeiro Advocacia",
+    "type": "Website",
+    "image": "img/projects/ribeiro/ribeiro.jpg",
+    "online": true,
+    "link": "http://ribeirosadvocacia.adv.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Alves, Carneiro & Lima",
+    "type": "Website",
+    "image": "img/projects/alves/alves.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "MySQL"
+    ]
+  }
+]
