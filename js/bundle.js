@@ -1,33 +1,6 @@
 (function(angular){
 'use strict';
 (function(){
-CommonConfig.$inject = ["$stateProvider", "$urlRouterProvider", "$uiViewScrollProvider"];angular
-  .module('app.common', [
-    'app.core',
-    'templates'
-  ])
-  .config(CommonConfig);
-
-function CommonConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
-  var state = {
-    name: '404',
-    url: '/404',
-    templateUrl: './404.html',
-    resolve: {},
-    data: {
-      pageTitle: '404'
-    }
-  };
-
-  $stateProvider.state(state);
-
-  $urlRouterProvider
-    .when('', '/')
-    .when('/', '/home')
-    .otherwise('/404');
-}
-})();
-(function(){
 CoreConfig.$inject = ["$compileProvider"];
 CoreRun.$inject = ["$transitions", "$state", "$rootScope"];angular
   .module('app.core', [
@@ -57,6 +30,33 @@ function CoreRun($transitions, $state, $rootScope) {
   .module('app.components', [
     'app.common'
   ]);})();
+(function(){
+CommonConfig.$inject = ["$stateProvider", "$urlRouterProvider", "$uiViewScrollProvider"];angular
+  .module('app.common', [
+    'app.core',
+    'templates'
+  ])
+  .config(CommonConfig);
+
+function CommonConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
+  var state = {
+    name: '404',
+    url: '/404',
+    templateUrl: './404.html',
+    resolve: {},
+    data: {
+      pageTitle: '404'
+    }
+  };
+
+  $stateProvider.state(state);
+
+  $urlRouterProvider
+    .when('', '/')
+    .when('/', '/home')
+    .otherwise('/404');
+}
+})();
 (function(){
 MailService.$inject = ["$http"];angular
   .module('app.common')
