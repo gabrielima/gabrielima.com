@@ -1,0 +1,10 @@
+<section class="section">
+  <h1 class="section__title h2">All Posts</h1>
+</section>
+
+<section class="posts">
+  <div ng-repeat="p in $ctrl.posts" class="posts__item">
+    <a ng-href="#/post/{{ p.slug }}">{{ p.title }}</a>
+    <time>{{ p.datetime | date: 'MMMM d, yyyy'}}</time>
+  </div>
+</section>

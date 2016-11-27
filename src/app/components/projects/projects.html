@@ -1,0 +1,18 @@
+<section class="section">
+  <h1 class="section__title h2">All Projects</h1>
+</section>
+
+<section class="section projects">
+  <a
+    ng-repeat="p in $ctrl.projects"
+    class="projects__item"
+    ng-href="{{ p.link }}">
+    <img ng-src="{{ p.image }}" ng-alt="{{ p.name }}">
+    <h3 class="h4">{{ p.name }}</h3>
+    <p class="projects__item__type">
+      {{ p.type }}
+      <span ng-show="{{ !p.online }}"> - Currently offline</span>
+    </p>
+    <p>{{ p.technologies.join(" - ") }}</p>
+  </a>
+</section>

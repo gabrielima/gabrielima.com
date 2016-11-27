@@ -1,0 +1,61 @@
+/*
+*  Colors
+*----------------------- */
+$text-color: #333;
+$heading-color: #111;
+
+$primary-color: #22A7F0;
+$error-color: #e74c3c;
+$success-color: #27ae60;
+
+$background-color-grey: #eceeef;
+
+$link-color: $primary-color;
+$link-hover-color: darken($primary-color, 10%);
+$link-visited-color: darken($primary-color, 20%);
+
+
+/*
+*  Typography
+*----------------------- */
+$base-font-family: sans-serif;
+$base-font-root: 18px;
+$base-font-weight: 300;
+$base-font-line-height: 1.6 !default;
+
+$base-font-size: 1rem !default;
+$base-font-lg:   1.1rem !default;
+$base-font-sm:   1.05rem !default;
+$base-font-xs:   1rem !default;
+
+$heading-font-family: sans-serif;
+$heading-font-weight: 700;
+
+/*
+*  Grid
+*----------------------- */
+
+//Starting from
+$xs: 0;
+// $sm: 480px;
+$sm: 660px;
+$md: 768px;
+$lg: 992px;
+$xg: 1100px;
+
+$container: 1000px;
+$gutter: 20px;
+$columns: 12;
+
+/*
+*  Indexing
+*----------------------- */
+$index1: 10;
+$index2: 20;
+$index3: 30;
+$index4: 40;
+$index5: 50;
+$index6: 60;
+$index7: 70;
+$index8: 80;
+$index9: 90;

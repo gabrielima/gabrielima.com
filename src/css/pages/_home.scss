@@ -1,0 +1,247 @@
+/*
+*  HOME
+*------------------------------*/
+
+.home {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+
+  @include sm {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+  }
+
+  @include md {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.home__title { margin-bottom: 0; }
+.home__subtitle { margin-top: 0; }
+
+@include breakpoint(0, $sm) {
+  .home__title{ font-size: 250%; letter-spacing: -1px; }
+  .home__subtitle{ font-size: 130%; }
+}
+
+/*
+*  ABOUT
+*------------------------------*/
+
+.about{ background-color: $background-color-grey; }
+
+.about__description {
+  > p {
+    margin-top: 0;
+    font-size: 16px;
+
+    @include md { font-size: 18px; }
+  }
+  @extend .card;
+}
+
+.about__picture {
+  display: block;
+  width: 230px;
+  height: 260px;
+  margin: 0 auto 30px;
+
+  @include sm {
+    float: left;
+    margin-right: 50px;
+  }
+}
+
+/*
+*  LATEST PROJECTS
+*------------------------------*/
+
+.projects--home { margin-bottom: 70px; }
+.projects--home__wrapper { font-size: 0; }
+
+.projects--home__item,
+.projects--home__all {
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-size: 100% 100%;
+
+  @include sm{ width: 50%; };
+  @include md{ width: 33.33333%; };
+  @include inline-block-top;
+
+  > h4 {
+    opacity: 0;
+    margin: 0;
+    transition: all .4s ease;
+    z-index: $index9;
+    padding: 0 20px;
+    @include vertical-align-element;
+  }
+}
+
+.projects--home__item {
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: $index6;
+    top:0;
+    left:0;
+    opacity: .4;
+    background: linear-gradient(to bottom, #fff 0%, #fff 50%,
+      $primary-color 51%, $primary-color 100%);
+    background-size: 100% 230%;
+    background-position: center top;
+    transition: all .4s ease;
+  }
+
+  &:hover {
+    > h4 { opacity: 1; }
+    &:after{
+      opacity: .7;
+      background-position: center bottom;
+    }
+  }
+}
+
+.projects--home__all{
+  background-color: $primary-color;
+  transition: .45s;
+
+  > span{
+    display: block;
+    z-index: $index9;
+    @extend .h4;
+    @include vertical-align-element;
+  }
+
+  &:hover { background-color: darken($primary-color, 20%); }
+}
+
+
+
+/*
+*  SKILLS
+*------------------------------*/
+.skills{
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+}
+
+.skills__list { padding: 0; }
+
+.skill{
+  @extend .btn;
+  background-color: #fff;
+  border: none;
+  color: lighten($text-color, 20%);
+  margin: 10px 18px;
+  font-size: 11px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+
+  @include sm {
+    margin: 20px 30px;
+    font-size: 13px;
+  }
+}
+
+
+/*
+*  BLOG
+*------------------------------*/
+
+.posts--home { background-color: $background-color-grey; }
+.posts--home__wrapper { @include clearfix; }
+
+.posts--home__item{
+  padding: 40px 30px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  display: block;
+
+  > p { margin: 0; }
+  > time { color: $text-color; }
+
+  @include md {
+    width: 45%;
+
+    &:nth-child(2n+1){float: left}
+    &:nth-child(2n){float: right}
+  }
+}
+
+.posts--home__all{
+  display: block;
+  margin: 60px auto 0;
+  width: 90%;
+  max-width: 350px;
+}
+
+
+/*
+*  CONTACT
+*------------------------------*/
+
+.contact__form {
+  @include clearfix;
+
+  > div:first-child,
+  > div:nth-child(2) {
+    width: 45%;
+    float: left;
+    @include md { width: 100%; }
+  }
+
+  > div:nth-child(2) { float: right;}
+
+  > div input, > div textarea { width: 100%; display: block}
+  > div textarea {
+    height: 175px;
+    resize: none;
+  }
+
+  /* TEMPORARY */
+  display: none;
+}
+
+.contact__success,
+.contact__error {
+  float: left;
+  color: $success-color;
+  font-weight: $heading-font-weight;
+  margin-top: 4px;
+}
+
+.contact__error { color: $error-color; }
+.contact__submit{ float: right; }
+
+.contact__email {
+  display: block;
+  margin: 60px auto 0;
+  width: 90%;
+  max-width: 350px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  text-transform: none;
+  color: #fff;
+  background-color: $primary-color;
+  border: none;
+  font-size: 20px;
+  transition: .45s;
+
+  &:hover{ background-color: darken($primary-color, 20%);}
+}

@@ -1,0 +1,29 @@
+.projects {
+  background-color: $background-color-grey;
+  @include clearfix;
+
+  @include md {
+    font-size: 0;
+  }
+}
+
+.projects__item {
+  @extend .card;
+  font-size: $base-font-size;
+  padding: 40px 30px;
+  margin-bottom: 20px;
+  color: $text-color;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  &__type { margin: 0; }
+
+  > img { width: 100%; }
+
+  @include md {
+    width: 46%;
+
+    &:nth-child(2n+1) { margin-right: 2%; }
+    &:nth-child(2n) { margin-left: 2%; }
+  }
+}
