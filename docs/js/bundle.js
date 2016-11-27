@@ -27,10 +27,6 @@ function CommonConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider)
     .otherwise('/404');
 }
 })();
-(function(){angular
-  .module('app.components', [
-    'app.common'
-  ]);})();
 (function(){
 CoreConfig.$inject = ["$compileProvider"];
 CoreRun.$inject = ["$transitions", "$state", "$rootScope"];angular
@@ -57,6 +53,10 @@ function CoreRun($transitions, $state, $rootScope) {
   }, function() {});
 }
 })();
+(function(){angular
+  .module('app.components', [
+    'app.common'
+  ]);})();
 (function(){
 MailService.$inject = ["$http"];angular
   .module('app.common')
