@@ -1,36 +1,6 @@
 (function(angular){
 'use strict';
 (function(){
-CoreConfig.$inject = ["$compileProvider"];
-CoreRun.$inject = ["$transitions", "$state", "$rootScope"];angular
-  .module('app.core', [
-    'ui.router',
-    'ngMessages',
-    'ngSanitize'
-  ])
-  .config(CoreConfig)
-  .run(CoreRun);
-
-function CoreConfig($compileProvider) {
-  $compileProvider.debugInfoEnabled(false);
-}
-
-function CoreRun($transitions, $state, $rootScope) {
-  $transitions.onStart({
-    to: function (state) {
-      // Edit page title
-      $rootScope.title = state.data.pageTitle || state.resolve.post.title;
-
-      return true;
-    }
-  }, function() {});
-}
-})();
-(function(){angular
-  .module('app.components', [
-    'app.common'
-  ]);})();
-(function(){
 CommonConfig.$inject = ["$stateProvider", "$urlRouterProvider", "$uiViewScrollProvider"];angular
   .module('app.common', [
     'app.core',
@@ -55,6 +25,36 @@ function CommonConfig($stateProvider, $urlRouterProvider, $uiViewScrollProvider)
     .when('', '/')
     .when('/', '/home')
     .otherwise('/404');
+}
+})();
+(function(){angular
+  .module('app.components', [
+    'app.common'
+  ]);})();
+(function(){
+CoreConfig.$inject = ["$compileProvider"];
+CoreRun.$inject = ["$transitions", "$state", "$rootScope"];angular
+  .module('app.core', [
+    'ui.router',
+    'ngMessages',
+    'ngSanitize'
+  ])
+  .config(CoreConfig)
+  .run(CoreRun);
+
+function CoreConfig($compileProvider) {
+  $compileProvider.debugInfoEnabled(false);
+}
+
+function CoreRun($transitions, $state, $rootScope) {
+  $transitions.onStart({
+    to: function (state) {
+      // Edit page title
+      $rootScope.title = state.data.pageTitle || state.resolve.post.title;
+
+      return true;
+    }
+  }, function() {});
 }
 })();
 (function(){
@@ -114,6 +114,16 @@ function BlogController() {
   var ctrl = this;
 }
 })();
+(function(){angular
+  .module('app.components')
+  .controller('PostController', PostController);
+
+function PostController() {
+  var ctrl = this;
+  var converter = new showdown.Converter();
+  ctrl.post = converter.makeHtml(ctrl.post);
+}
+})();
 (function(){
 HomeController.$inject = ["MailService"];angular
   .module('app.components')
@@ -139,16 +149,6 @@ function HomeController(MailService) {
         }
       });
   };
-}
-})();
-(function(){angular
-  .module('app.components')
-  .controller('PostController', PostController);
-
-function PostController() {
-  var ctrl = this;
-  var converter = new showdown.Converter();
-  ctrl.post = converter.makeHtml(ctrl.post);
 }
 })();
 (function(){angular
@@ -194,6 +194,43 @@ function BlogComponentConfig($stateProvider) {
 }
 })();
 (function(){
+PostComponentConfig.$inject = ["$stateProvider"];angular
+  .module('app.components')
+  .component('post', PostComponent())
+  .config(PostComponentConfig);
+
+function PostComponent() {
+  return {
+    templateUrl: './post.html',
+    controller: 'PostController',
+    bindings: {
+      slug: '<',
+      post: '<'
+    }
+  };
+}
+
+function PostComponentConfig($stateProvider) {
+  var state = {
+    name: 'post',
+    url: '/post/:slug',
+    component: 'post',
+    resolve: {
+      slug: function($transition$) {
+        return $transition$.params().slug
+      },
+
+      post: function(PostsService, slug) {
+        return PostsService.fetch(slug);
+      }
+    },
+    data: {}
+  };
+
+  $stateProvider.state(state);
+}
+})();
+(function(){
 HomeComponentConfig.$inject = ["$stateProvider"];angular
   .module('app.components')
   .component('home', HomeComponent())
@@ -226,43 +263,6 @@ function HomeComponentConfig($stateProvider) {
     data: {
       pageTitle: 'Home'
     }
-  };
-
-  $stateProvider.state(state);
-}
-})();
-(function(){
-PostComponentConfig.$inject = ["$stateProvider"];angular
-  .module('app.components')
-  .component('post', PostComponent())
-  .config(PostComponentConfig);
-
-function PostComponent() {
-  return {
-    templateUrl: './post.html',
-    controller: 'PostController',
-    bindings: {
-      slug: '<',
-      post: '<'
-    }
-  };
-}
-
-function PostComponentConfig($stateProvider) {
-  var state = {
-    name: 'post',
-    url: '/post/:slug',
-    component: 'post',
-    resolve: {
-      slug: function($transition$) {
-        return $transition$.params().slug
-      },
-
-      post: function(PostsService, slug) {
-        return PostsService.fetch(slug);
-      }
-    },
-    data: {}
   };
 
   $stateProvider.state(state);
