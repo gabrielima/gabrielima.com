@@ -19,9 +19,9 @@ function ProjectsComponentConfig($stateProvider) {
     url: '/projects',
     component: 'projects',
     resolve: {
-      projects: function(ProjectsService) {
+      projects: ['ProjectsService', function(ProjectsService) {
         return ProjectsService.fetchAll();
-      }
+      }]
     },
     data: {
       pageTitle: 'Projects'

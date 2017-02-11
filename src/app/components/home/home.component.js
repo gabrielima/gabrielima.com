@@ -20,12 +20,12 @@ function HomeComponentConfig($stateProvider) {
     url: '/home',
     component: 'home',
     resolve: {
-      projects: function(ProjectsService) {
+      projects: ['ProjectsService', function(ProjectsService) {
         return ProjectsService.fetchAll();
-      },
-      posts: function(PostsService) {
+      }],
+      posts: ['PostsService', function(PostsService) {
         return PostsService.fetchAll();
-      },
+      }],
     },
     data: {
       pageTitle: 'Home'

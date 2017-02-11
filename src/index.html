@@ -11,7 +11,6 @@
 	<meta name="webmaster" content="Gabriel Lima">
 	<meta name="viewport" content="initial-scale=1, user-scalable=yes">
 	<meta name="keywords" content="gabriel lima, front-end, web design, back-end, wordpress, html5, css3, angularjs">
-  <meta name="language" content="en-us">
 	<meta name="charset" content="UTF-8">
   <meta name="author" content="http://www.gabrielima.com">
 	<meta name="robots" content="all">
@@ -21,7 +20,7 @@
 	<meta property="og:description" content="Gabriel Lima is a web developer based in Brazil">
 	<meta property="og:site_name" content="gabrielima.com - Gabriel Lima Web Developer">
 	<meta property="og:title" content="gabrielima.com - Gabriel Lima Web Developer">
-	<meta property="og:image" content="img/favicon.png">
+	<meta property="og:image" content="img/gabrielima.jpg">
   <meta property="og:type" content="place">
 	<meta property="og:url" content="http://www.gabrielima.com/">
 
@@ -65,7 +64,15 @@
 		</div>
   </header>
 
-	<main ui-view autoscroll></main>
+	<main ui-view autoscroll>
+		<section class="section home">
+		  <div class="home__dialog">
+		    <h1 class="home__title">Gabriel Lima</h1>
+		    <h2 class="h4 home__subtitle">Web Developer</h2>
+		    <small>Carregando ...</small>
+		  </div>
+		</section>
+	</main>
 
 	<footer class="footer">
 		<p class="footer__copy">Copyright 2015 - Gabriel Lima</p>
@@ -73,5 +80,13 @@
 
 	<script src="js/vendors.js"></script>
 	<script src="js/bundle.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+		ga('create', 'UA-43874531-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async src="https://www.google-analytics.com/analytics.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ var cache        = require('gulp-cache');
 var sass         = require('gulp-sass');
 var ngAnnotate   = require('gulp-ng-annotate');
 var templateCache = require('gulp-angular-templatecache');
+var combineMq    = require('gulp-combine-mq');
 var browserSync  = require('browser-sync').create();
 
 var vendors_js = [
@@ -76,6 +77,9 @@ gulp.task('styles', function() {
 	    outputStyle: 'compressed',
 	    errLogToConsole: true
 	  }))
+    .pipe(combineMq({
+      beautify: false
+    }))    
 	  .pipe(autoprefixer({
 	    browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
 	    cascade:  true
@@ -129,12 +133,16 @@ gulp.task('bundle', ['vendors', 'templates'], function(){
     }))
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
-    .pipe(wrap('(function(){<%= contents %>})();'))
+    .pipe(ngAnnotate({gulpWarnings: false}))
+    .pipe(wrap(';(function(){\n\'use strict\';\n<%= contents %>})();'))
     .pipe(concat('bundle.js'))
-    .pipe(ngAnnotate())
-    .pipe(wrap('(function(angular){\n\'use strict\';\n<%= contents %>})(window.angular);'))
-    //.pipe(uglify())
-    .pipe(gulp.dest('././dist/js'))
+    .pipe(uglify({
+      options : {
+        beautify : true,
+        mangle   : true
+      }
+    }))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 });
 

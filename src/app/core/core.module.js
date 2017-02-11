@@ -11,7 +11,7 @@ function CoreConfig($compileProvider) {
   $compileProvider.debugInfoEnabled(false);
 }
 
-function CoreRun($transitions, $state, $rootScope) {
+function CoreRun($transitions, $rootScope) {
   $transitions.onStart({
     to: function (state) {
       // Edit page title

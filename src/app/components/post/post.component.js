@@ -20,15 +20,16 @@ function PostComponentConfig($stateProvider) {
     url: '/post/:slug',
     component: 'post',
     resolve: {
-      slug: function($transition$) {
-        return $transition$.params().slug
-      },
-
-      post: function(PostsService, slug) {
+      slug: ['$transition$', function($transition$) {
+        return $transition$.params().slug;
+      }],
+      post: ['PostsService', 'slug', function(PostsService, slug) {
         return PostsService.fetch(slug);
-      }
+      }]
     },
-    data: {}
+    data: {
+      pageTitle: 'Post'
+    }
   };
 
   $stateProvider.state(state);

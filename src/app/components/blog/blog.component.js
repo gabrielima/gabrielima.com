@@ -19,9 +19,9 @@ function BlogComponentConfig($stateProvider) {
     url: '/blog',
     component: 'blog',
     resolve: {
-      posts: function(PostsService) {
+      posts: ['PostsService', function(PostsService) {
         return PostsService.fetchAll();
-      }
+      }]
     },
     data: {
       pageTitle: 'Blog'
