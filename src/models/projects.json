@@ -17,7 +17,7 @@
     "type": "Landing Page",
     "image": "img/projects/minha-ufg/minha-ufg-landing.jpg",
     "online": true,
-    "link": "http://marceloquinta.github.io/muralUFG/Web",
+    "link": "http://minha.ufg.br",
     "technologies": [
       "HTML5",
       "SASS",
@@ -30,7 +30,7 @@
     "type": "Web Application",
     "image": "img/projects/minha-ufg/minha-ufg-admin.jpg",
     "online": true,
-    "link": "http://marceloquinta.github.io/muralUFG/Web",
+    "link": "http://minha.ufg.br/admin",
     "technologies": [
       "HTML5",
       "SASS",
@@ -43,12 +43,12 @@
     "name": "MinhaUFG - PWA",
     "type": "Progressive Web App",
     "image": "img/projects/minha-ufg/minha-ufg-pwa.jpg",
-    "online": false,
-    "link": "",
+    "online": true,
+    "link": "http://minha.ufg.br/app",
     "technologies": [
       "HTML5",
       "SASS",
-      "Angular 2",
+      "Angular 4",
       "Firebase",
       "Material Design"
     ]
@@ -105,11 +105,37 @@
     ]
   },
   {
+    "name": "Ex Toner",
+    "type": "Website",
+    "image": "img/projects/extoner/extoner.jpg",
+    "online": true,
+    "link": "http://extoner.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript"
+    ]
+  }, 
+  {
+    "name": "Ribeiro Advocacia",
+    "type": "Website",
+    "image": "img/projects/ribeiro/ribeiro.jpg",
+    "online": true,
+    "link": "http://ribeirosadvocacia.adv.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "MySQL"
+    ]
+  },   
+  {
     "name": "Mounza Inc.",
     "type": "Landing Page",
     "image": "img/projects/mounza/mounza.jpg",
-    "online": true,
-    "link": "http://mounza.com",
+    "online": false,
+    "link": "",
     "technologies": [
       "HTML5",
       "CSS3",
@@ -127,32 +153,6 @@
       "HTML5",
       "CSS3",
       "AngularJS",
-      "PHP",
-      "MySQL"
-    ]
-  },
-  {
-    "name": "Ex Toner",
-    "type": "Website",
-    "image": "img/projects/extoner/extoner.jpg",
-    "online": true,
-    "link": "http://extoner.com.br",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "Javascript"
-    ]
-  },
-  {
-    "name": "Ribeiro Advocacia",
-    "type": "Website",
-    "image": "img/projects/ribeiro/ribeiro.jpg",
-    "online": true,
-    "link": "http://ribeirosadvocacia.adv.br",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "Javascript",
       "PHP",
       "MySQL"
     ]
