@@ -18,7 +18,7 @@ var browserSync  = require('browser-sync').create();
 
 var vendors_js = [
   'angular/angular.min.js',
-  'angular-ui-router/release/angular-ui-router.min.js',
+  '@uirouter/angularjs/release/angular-ui-router.min.js',
   'angular-messages/angular-messages.min.js',
   'angular-sanitize/angular-sanitize.min.js',
   'showdown/dist/showdown.min.js'
@@ -118,12 +118,7 @@ gulp.task('templates', function() {
 
 gulp.task('bundle', ['vendors', 'templates'], function(){
 	return gulp.src([
-			'./src/app/**/*.module.js',
-			'./src/app/**/*.filter.js',
-			'./src/app/**/*.service.js',
-			'./src/app/**/*.directive.js',
-			'./src/app/**/*.controller.js',
-			'./src/app/**/*.component.js',
+			'./src/app/**/{*, !app}.js',
       './src/tmp/templates.js',
 			'./src/app/app.js',
     ])
