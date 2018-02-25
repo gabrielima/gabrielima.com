@@ -1,0 +1,16 @@
+[debug] [2018-02-25T14:08:31.451Z] ----------------------------------------------------------------------
+[debug] [2018-02-25T14:08:31.453Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-02-25T14:08:31.454Z] CLI Version:   3.15.3
+[debug] [2018-02-25T14:08:31.454Z] Platform:      darwin
+[debug] [2018-02-25T14:08:31.454Z] Node Version:  v8.2.0
+[debug] [2018-02-25T14:08:31.455Z] Time:          Sun Feb 25 2018 11:08:31 GMT-0300 (-03)
+[debug] [2018-02-25T14:08:31.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-25T14:08:31.473Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-25T14:08:31.474Z] > authorizing via signed-in user
+[debug] [2018-02-25T14:08:31.476Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gabrielima-portfolio  
+ Sun Feb 25 2018 11:08:31 GMT-0300 (-03)
+[debug] [2018-02-25T14:08:32.414Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T14:08:32.416Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gabrielima-portfolio/tokens  
+ Sun Feb 25 2018 11:08:32 GMT-0300 (-03)
+[debug] [2018-02-25T14:08:33.479Z] <<< HTTP RESPONSE 200
