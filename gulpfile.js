@@ -79,7 +79,7 @@ gulp.task('styles', function() {
 	  }))
     .pipe(combineMq({
       beautify: false
-    }))    
+    }))
 	  .pipe(autoprefixer({
 	    browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
 	    cascade:  true
@@ -156,12 +156,14 @@ gulp.task('vendors', function() {
 		  .pipe(gulp.dest('./dist/css'));
 })
 
+gulp.task('compile', ['models', 'images', 'styles', 'bundle', 'html'], function() {});
+
 
 /**
  *	RUN SERVER WITH LIVERELOAD
  */
 
-gulp.task('serve', ['models', 'images', 'styles', 'bundle', 'html'], function() {
+gulp.task('serve', ['build'], function() {
 	return browserSync.init({
 	  files: './dist',
 	  port: 8000,
@@ -180,4 +182,9 @@ gulp.task('watch', ['serve'], function() {
 
 gulp.task('default', [
   'watch'
+]);
+
+
+gulp.task('build', [
+  'compile'
 ]);

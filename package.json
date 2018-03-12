@@ -1,8 +1,12 @@
 {
-  "name": "gabrielima.github.io",
+  "name": "gabrielima",
   "version": "6.0.0",
   "description": "Gabriel Lima Portfolio",
   "main": "index.html",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.3",
     "angular": "1.5.8",
@@ -30,9 +34,6 @@
     "gulp-wrap": "^0.13.0",
     "jshint": "^2.9.4",
     "path": "^0.12.7"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
