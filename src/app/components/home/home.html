@@ -12,12 +12,12 @@
     <img src="img/gabrielima.jpg" alt="Gabriel Lima" class="about__picture">
 
     <p>
-      A computer science student with 5+ years of experience in web development 
-      and computer programming with problem solving skills. Former researcher at 
-      the PixelLab - Computer Vision Laboratory - and member of the Advanced 
-      Programming Techniques Team of the Federal University of Goias. Finalist 
-      at the Brazilian ACM Programming Contest of 2013. Exchange program at Temple 
-      University, Philadelphia - PA. Experience as a web developer at a startup in 
+      Computer science graduate with 6+ years of experience in web development
+      and computer programming with problem solving skills. Former researcher at
+      the PixelLab - Computer Vision Laboratory - and former member of the Advanced
+      Programming Techniques Team of the Federal University of Goias. Finalist
+      at the Brazilian ACM Programming Contest of 2013. Exchange program at Temple
+      University, Philadelphia - PA. Experience as a web developer at a startup in
       the silicon valley.
     </p>
 
@@ -29,7 +29,7 @@
   <h2 class="section__title">Latest Projects</h2>
 
   <div class="projects--home__wrapper">
-    <a ng-repeat="p in $ctrl.projects | limitTo: 5"
+    <a ng-repeat="p in $ctrl.projects | limitTo: $ctrl.limitProjects"
        ng-href="{{ p.link }}"
        class="projects--home__item"
        ng-style="{ backgroundImage: 'url(\'' + p.image + '\')' }">
@@ -59,7 +59,6 @@
     <li class="skill">MySQL</li>
     <li class="skill">Gulp</li>
     <li class="skill">Git</li>
-    <li class="skill">C/C++ STL</li>
     <li class="skill">Adobe Photoshop</li>
   </ul>
 </section>
