@@ -1,29 +1,31 @@
 .projects {
   background-color: $background-color-grey;
-  @include clearfix;
-
-  @include md {
-    font-size: 0;
-  }
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .projects__item {
   @extend .card;
   font-size: $base-font-size;
-  padding: 40px 30px;
+  font-size: 1rem;
   margin-bottom: 20px;
-  color: $text-color;
+  color: #333;
   text-align: center;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;s
+
   &__type { margin: 0; }
 
   > img { width: 100%; }
 
-  @include md {
-    width: 46%;
+  @include sm {
+    flex: 0 0 45%;
+  }
 
-    &:nth-child(2n+1) { margin-right: 2%; }
-    &:nth-child(2n) { margin-left: 2%; }
+  @include lg {
+    flex: 0 0 30%;
   }
 }

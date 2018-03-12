@@ -2,12 +2,22 @@ angular
   .module('app.components')
   .controller('HomeController', HomeController);
 
-function HomeController(MailService) {
+function HomeController(MailService, $window, $scope) {
   var ctrl = this;
-  
+
+  ctrl.limitProjects = 3;
   ctrl.formData = {};
   ctrl.formData.form_status = true;
   ctrl.formData.form_message = '';
+
+  ctrl.$onInit = function() {
+    limitProjects();
+
+    angular.element($window).bind('resize', function() {
+      limitProjects();
+      $scope.$apply();
+    });
+  };
 
   ctrl.formSubmit = function(){
     MailService
@@ -22,4 +32,16 @@ function HomeController(MailService) {
         }
       });
   };
+
+  function limitProjects() {
+    ctrl.limitProjects = 3;
+
+    if ($window.innerWidth > 660) {
+      ctrl.limitProjects = 5;
+    }
+
+    if ($window.innerWidth > 768) {
+      ctrl.limitProjects = 7;
+    }
+  }
 }

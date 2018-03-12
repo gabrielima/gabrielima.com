@@ -44,8 +44,7 @@
 
 .about__picture {
   display: block;
-  width: 230px;
-  height: 260px;
+  width: 185px;
   margin: 0 auto 30px;
 
   @include sm {
@@ -75,7 +74,7 @@
   background-size: 100% 100%;
 
   @include sm{ width: 50%; };
-  @include md{ width: 33.33333%; };
+  @include md{ width: 25%; };
   @include inline-block-top;
 
   > h4 {
