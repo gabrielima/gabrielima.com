@@ -5,5 +5,5 @@
 	$assunto  = $_POST['assunto'];
 	$mensagem = $_POST['msg'];
 
-	mail("gabriellima_r@hotmail.com","$assunto","$mensagem","FROM:$nome<$email>");
+	mail("","$assunto","$mensagem","FROM:$nome<$email>");
 ?>
