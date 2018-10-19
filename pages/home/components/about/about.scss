@@ -1,0 +1,24 @@
+@import './../../../../static/sass/utils/variables';
+@import './../../../../static/sass/utils/mixins';
+
+.about{ background-color: $background-color-grey; }
+
+.about__description {
+  > p {
+    margin-top: 0;
+    font-size: 16px;
+
+    @include md { font-size: 18px; }
+  }
+}
+
+.about__picture {
+  display: block;
+  width: 185px;
+  margin: 0 auto 30px;
+
+  @include sm {
+    float: left;
+    margin-right: 50px;
+  }
+}

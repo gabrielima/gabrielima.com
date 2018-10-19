@@ -1,0 +1,26 @@
+@import './../../../../static/sass/utils/variables';
+@import './../../../../static/sass/utils/mixins';
+
+.home {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+
+  @include sm {
+    padding-top: 7rem;
+    padding-bottom: 9rem;
+  }
+
+  @include md {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+  }
+}
+
+.home__title { margin-bottom: 0; }
+.home__subtitle { margin-top: 0; }
+
+@include breakpoint(0, $sm) {
+  .home__title{ font-size: 250%; letter-spacing: -1px; }
+  .home__subtitle{ font-size: 130%; }
+}

@@ -1,0 +1,30 @@
+@import './../../../../static/sass/utils/variables';
+@import './../../../../static/sass/utils/mixins';
+
+.posts--home { background-color: $background-color-grey; }
+.posts--home__wrapper { @include clearfix; }
+
+.posts--home__item{
+  padding: 40px 30px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  display: block;
+
+  > p { margin: 0; }
+  > time { color: $text-color; }
+
+  @include md {
+    width: 45%;
+
+    &:nth-child(2n+1){float: left}
+    &:nth-child(2n){float: right}
+  }
+}
+
+.posts--home__all{
+  display: block;
+  margin: 60px auto 0;
+  width: 90%;
+  max-width: 350px;
+}
