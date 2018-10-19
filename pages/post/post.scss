@@ -1,0 +1,24 @@
+@import './../../static/sass/utils/_variables';
+@import './../../static/sass/utils/_mixins';
+
+.post{
+  max-width: 800px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  time { display: block; margin-bottom: 50px; }
+}
+
+.post--info{
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  > .btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
