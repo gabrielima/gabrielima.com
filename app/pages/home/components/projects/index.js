@@ -8,11 +8,13 @@ const Projects = ({ projects }) => (
 
     <div className="projects--home__wrapper">
       {projects.map((project, index) => (
-        <Link href={project.link} key={index}>
-          <a className="projects--home__item" style={{backgroundImage: `url(static/${project.image})`}}>
-            <h4>{project.name}</h4>
-          </a>
-        </Link>
+        <a
+          href={project.link}
+          key={index}
+          className="projects--home__item"
+          style={{backgroundImage: `url(/static/${project.image})`}}>
+          <h4>{project.name}</h4>
+        </a>
       ))}
 
       <Link href="projects">

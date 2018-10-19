@@ -5,8 +5,8 @@ import './nav.scss';
 class Nav extends Component {
   menu = [
     { link: '/', name: 'Home' },
-    { link: 'projects', name: 'Projects' },
-    { link: 'blog', name: 'Blog' },
+    { link: '/projects', name: 'Projects' },
+    { link: '/blog', name: 'Blog' },
   ];
 
   social_media = [
@@ -63,7 +63,7 @@ class Nav extends Component {
               target="_blank"
               rel="noopener nofollow"
             >
-              <img src={`static/img/social_media/${social.name}.jpg`} alt={social.name} />
+              <img src={`/static/img/social_media/${social.name}.jpg`} alt={social.name} />
             </a>
           ))}
         </div>

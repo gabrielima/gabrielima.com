@@ -16,7 +16,7 @@ const Projects = ({ projects }) => (
       <section className="section projects">
         {projects.map((project, index) => (
           <a className="card projects__item" href={ project.link } target="_blank" rel="noopener nofollow" key={index}>
-            <img src={`static/${project.image}`} alt={ project.name } />
+            <img src={`/static/${project.image}`} alt={ project.name } />
 
             <h3 className="h4">{ project.name }</h3>
 

@@ -7,11 +7,17 @@ export const getPosts = async () => {
 }
 
 export const getPost = async (slug) => {
-  const posts = getPosts();
-  const text = await fetch(baseUrl + '/static/data/posts/' + slug + '.md');
+  const posts = await getPosts();
 
   let post = posts.filter(post => post.slug === slug);
-  post = post ? post[0] : post;
+  if (!post.length) {
+    return { error: 404 };
+  }
+
+  post = post[0];
+
+  let text = await fetch(baseUrl + '/static/data/posts/' + slug + '.md');
+  text = await text.text();
 
   return { ...post, text };
 }

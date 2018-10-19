@@ -6,7 +6,7 @@ const About = ({ bio }) => (
     <h2 className="section__title">About</h2>
 
     <div className="card about__description">
-      <img src="static/img/gabrielima.jpg" alt="Gabriel Lima" className="about__picture" />
+      <img src="/static/img/gabrielima.jpg" alt="Gabriel Lima" className="about__picture" />
 
       <p>{bio}</p>
 
