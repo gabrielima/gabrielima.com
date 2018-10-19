@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Actuar - Plano Impacto",
+    "type": "Landing Page",
+    "image": "img/projects/actuar/plano-impacto.jpg",
+    "online": true,
+    "link": "https://actuar.com/planoimpacto",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JQuery",
+      "Babel",
+      "Web Audio API"
+    ]
+  },
+  {
+    "name": "Actuar Web",
+    "type": "Web Application",
+    "image": "img/projects/actuar/actuar-web.jpg",
+    "online": true,
+    "link": "https://actuar.com",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Typescript",
+      "Twitter Bootstrap",
+      "DevExtreme"
+    ]
+  },
+  {
+    "name": "Trei.no",
+    "type": "Hybrid Mobile Application",
+    "image": "img/projects/actuar/treino.jpg",
+    "online": true,
+    "link": "https://trei.no",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Angular Material",
+      "Cordova"
+    ]
+  },
+  {
+    "name": "Afig",
+    "type": "Web Application",
+    "image": "img/projects/actuar/afig.jpg",
+    "online": true,
+    "link": "https://afig.actuar.com",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Twitter Bootstrap",
+      "DevExtreme"
+    ]
+  },
+  {
+    "name": "Deputado Estadual Gustavo Sebba",
+    "type": "Website",
+    "image": "img/projects/gustavo-sebba/gustavo-sebba.jpg",
+    "online": true,
+    "link": "http://www.gustavosebba.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Wordpress"
+    ]
+  },
+  {
+    "name": "Manutenção de Índices",
+    "type": "Web Application",
+    "image": "img/projects/indices/indices.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "AngularJS",
+      "Twitter Bootstrap",
+      "Charts.JS",
+      "Java",
+      "Spring Boot",
+      "Web Sockets"
+    ]
+  },
+  {
+    "name": "Portal Telemedicina",
+    "type": "Web Application",
+    "image": "img/projects/portal-telemedicina/portal-telemedicina.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "AngularJS",
+      "Angular Material",
+      "Charts.JS"
+    ]
+  },
+  {
+    "name": "Bus Gyn",
+    "type": "Progressive Web App",
+    "image": "img/projects/bus-gyn/bus-gyn.jpg",
+    "online": true,
+    "link": "http://gabrielima.github.io/bus-gyn",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "Service Workers"
+    ]
+  },
+  {
+    "name": "MinhaUFG",
+    "type": "Landing Page",
+    "image": "img/projects/minha-ufg/minha-ufg-landing.jpg",
+    "online": true,
+    "link": "http://minha.ufg.br",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "MinhaUFG- Admin",
+    "type": "Web Application",
+    "image": "img/projects/minha-ufg/minha-ufg-admin.jpg",
+    "online": true,
+    "link": "http://minha.ufg.br/admin",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "AngularJS",
+      "Firebase",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "MinhaUFG - PWA",
+    "type": "Progressive Web App",
+    "image": "img/projects/minha-ufg/minha-ufg-pwa.jpg",
+    "online": true,
+    "link": "http://minha.ufg.br/app",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Angular 4",
+      "Firebase",
+      "Material Design"
+    ]
+  },
+  {
+    "name": "Image Editing",
+    "type": "Web Application",
+    "image": "img/projects/image-editing/image-editing.jpg",
+    "online": true,
+    "link": "http://gabrielima.github.io/image-editing/",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Calculadoria",
+    "type": "Website",
+    "image": "img/projects/calculadoria/calculadoria.jpg",
+    "online": true,
+    "link": "http://www.calculadoria.com.br/",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Route 66",
+    "type": "E-commerce - Only Front-End",
+    "image": "img/projects/route66/route66.jpg",
+    "online": true,
+    "link": "http://route66mi.com.br",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Hurricane Evolution",
+    "type": "E-commerce - Only Front-End",
+    "image": "img/projects/hurricane/hurricane.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "FGSL - Fórum Goiano de Software Livre",
+    "type": "Website",
+    "image": "img/projects/fgsl/fgsl.jpg",
+    "online": true,
+    "link": "http://2016.fgsl.net",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Ex Toner",
+    "type": "Website",
+    "image": "img/projects/extoner/extoner.jpg",
+    "online": true,
+    "link": "http://extoner.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript"
+    ]
+  },
+  {
+    "name": "Ribeiro Advocacia",
+    "type": "Website",
+    "image": "img/projects/ribeiro/ribeiro.jpg",
+    "online": true,
+    "link": "http://ribeirosadvocacia.adv.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Mounza Inc.",
+    "type": "Landing Page",
+    "image": "img/projects/mounza/mounza.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "JQuery"
+    ]
+  },
+  {
+    "name": "Trak",
+    "type": "Web Application",
+    "image": "img/projects/trak/trak.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "AngularJS",
+      "PHP",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Alves, Carneiro & Lima",
+    "type": "Website",
+    "image": "img/projects/alves/alves.jpg",
+    "online": false,
+    "link": "",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "PHP",
+      "MySQL"
+    ]
+  }
+]
