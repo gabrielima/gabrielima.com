@@ -16,7 +16,7 @@ const Blog = ({ posts }) => (
       <section className="posts">
         {posts.map((post, index) => (
           <div className="posts__item" key={index}>
-            <Link as={`/post/${post.slug}`} href={`/post?slug=${post.slug}`}>
+            <Link as={`/blog/${post.slug}`} href={`/post?slug=${post.slug}`}>
               <a>{post.title}</a>
             </Link>
             <time>{formatDate(post.datetime)}</time>
