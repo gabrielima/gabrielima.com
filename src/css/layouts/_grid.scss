@@ -1,9 +1,0 @@
-.container {
-  padding-left: 5%;
-  padding-right: 5%;
-
-  @include breakpoint($container) {
-    padding-left: calc(50% - #{$container/2});
-    padding-right: calc(50% - #{$container/2});
-  }
-}
