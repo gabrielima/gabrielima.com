@@ -4,7 +4,7 @@ import HomeSection from '../../HomeStyles';
 
 const Contact = ({ email }) => (
   <HomeSection>
-    <HomeSection>Contact</HomeSection>
+    <HomeSection.Title>Contact</HomeSection.Title>
 
     <a href={`mailto:${email}`}>{ email }</a>
   </HomeSection>

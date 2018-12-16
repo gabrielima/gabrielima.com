@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { formatDate } from '../../../../utils/date-formatter';
+import { formatDate } from '../../../../misc/date-formatter';
 import HomeSection from '../../HomeStyles';
 import PostsList from './PostsStyles';
 

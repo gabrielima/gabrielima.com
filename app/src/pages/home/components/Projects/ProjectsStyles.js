@@ -17,13 +17,15 @@ ProjectsList.Item = styled.li`
   margin-bottom: 20px;
 `;
 
-ProjectsList.Item.Img = styled.img`
+ProjectsList.Item_Link = styled.a``;
+
+ProjectsList.Item_Img = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
 `;
 
-ProjectsList.Item.Title = styled.span`
+ProjectsList.Item_Title = styled.span`
 `;
 
 export default ProjectsList;

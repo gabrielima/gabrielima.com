@@ -10,14 +10,14 @@ const Header = styled.header`
   ${media.sm`justify-content: space-between;`}
 `;
 
-const Menu = styled.div`
+const Menu = styled.nav`
   display: block;
 `;
 
-Menu.Item = styled.div``;
+Menu.Item = styled.a``;
 
 const SocialMedia = styled.div``;
 
-SocialMedia.Item = styled.div``;
+SocialMedia.Item = styled.a``;
 
 export { Header, Menu, SocialMedia };

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Head from './../../components/head';
+import Head from './../../components/Head';
 import { getProjects } from './../../services/projects';
 
 const Projects = ({ projects }) => (
@@ -8,7 +8,7 @@ const Projects = ({ projects }) => (
     <Head title="Projects" />
 
     <section>
-      <h1>All Projects</h1>
+      <h1>Projects</h1>
     </section>
 
     <section>

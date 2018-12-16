@@ -1,14 +1,9 @@
 import React from 'react';
 import NextHead from 'next/head';
 import { string, array } from 'prop-types';
+import defaults from './defaults';
 
-const defaultKeywords = ['gabriel lima', 'front-end', 'angular', 'html5', 'css3', 'angularjs', 'web design', 'back-end'];
-const defaultDescription = 'Gabriel Lima - Web Developer';
-const defaultOgImage = 'http://www.gabrielima.com/static/img/gabrielima.jpg';
-const defaultUrl = 'http://www.gabrielima.com';
-const defaultTitle = 'Gabriel Lima - Web Developer';
-
-const buildTitle = (title) => title ? title + ' - ' + defaultTitle : defaultTitle;
+const buildTitle = (title) => title ? title + ' | ' + defaults.title : defaults.title;
 
 const Head = ({ title, description, url, ogImage, keywords }) => (
   <NextHead>
@@ -17,27 +12,27 @@ const Head = ({ title, description, url, ogImage, keywords }) => (
     <meta httpEquiv="cache-control" content="no-cache" />
     <meta httpEquiv="revisit-after" content="7 days" />
 
-    <meta name="description" content={ description | defaultDescription } />
-    <meta name="generator" content="http://www.gabrielima.com" />
+    <meta name="description" content={ description | defaults.description } />
+    <meta name="generator" content={ defaults.url } />
     <meta name="webmaster" content="Gabriel Lima" />
     <meta name="viewport" content="initial-scale=1, user-scalable=yes" />
-    <meta name="keywords" content={(keywords || defaultKeywords).join(', ')} />
+    <meta name="keywords" content={(keywords || defaults.keywords).join(', ')} />
     <meta name="charset" content="UTF-8" />
-    <meta name="author" content="http://www.gabrielima.com" />
+    <meta name="author" content={defaults.url} />
     <meta name="robots" content="all" />
     <meta name="title" content={ buildTitle(title) } />
 
     <meta property="og:locale:alternate" content="en_US" />
-    <meta property="og:description" content={ description || defaultDescription } />
+    <meta property="og:description" content={ description || defaults.description } />
     <meta property="og:site_name" content="gabrielima.com - Gabriel Lima Web Developer" />
     <meta property="og:title" content={ buildTitle(title) } />
-    <meta property="og:image" content={ ogImage || defaultOgImage } />
+    <meta property="og:image" content={ ogImage || defaults.ogImage } />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={ url || defaultUrl } />
+    <meta property="og:url" content={ url || defaults.url } />
 
     <link rel="author" href="https://twitter.com/rabeloglr" />
-    <link href="static/favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="canonical" href="http://www.gabrielima.com" />
+    <link rel="canonical" href={ defaults.url } />
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
     <meta name="theme-color" content="#22A7F0" />
 
     <title>{ buildTitle(title) }</title>

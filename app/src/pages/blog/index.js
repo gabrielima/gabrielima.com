@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import React, { Fragment } from 'react';
 
-import Head from '../../components/head';
+import Head from '../../components/Head';
 import { getPosts } from './../../services/posts';
-import { formatDate } from './../../utils/date-formatter';
+import { formatDate } from './../../misc/date-formatter';
 
 const Blog = ({ posts }) => (
   <Fragment>
     <Head title="Blog" />
 
     <section>
-      <h1>All Posts</h1>
+      <h1>Posts</h1>
     </section>
 
     <section>

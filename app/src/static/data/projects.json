@@ -1,5 +1,64 @@
 [
   {
+    "name": "Lyceu de Goiânia",
+    "type": "Website",
+    "image": "img/projects/lyceu/lyceu.jpg",
+    "online": true,
+    "background-gradient": [
+      "#293037",
+      "#293037"
+    ],
+    "link": "https://lyceudegoiania.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "React",
+      "Firebase Realtime Database",
+      "Firebase Hosting",
+      "SEO"
+    ]
+  },
+  {
+    "name": "Ex Toner",
+    "type": "Website",
+    "image": "img/projects/extoner/extoner.jpg",
+    "online": true,
+    "background-gradient": [
+      "#293037",
+      "#293037"
+    ],
+    "link": "http://extoner.com.br",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "NodeJS",
+      "ExpressJS",
+      "EJS",
+      "Firebase Realtime Database",
+      "Firebase Cloud Functions",
+      "Firebase Hosting"
+    ]
+  },  
+  {
+    "name": "Timer/Cronômetro/Tabata",
+    "type": "Web Application",
+    "image": "img/projects/actuar/timers.jpg",
+    "online": true,
+    "background-gradient": [
+      "#293037",
+      "#293037"
+    ],
+    "link": "http://trei.no/timer",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Typescript",
+      "RxJS"
+    ]
+  },
+  {
     "name": "Actuar - Plano Impacto",
     "type": "Landing Page",
     "image": "img/projects/actuar/plano-impacto.jpg",
@@ -33,7 +92,10 @@
       "Angular 5",
       "Typescript",
       "Twitter Bootstrap",
-      "DevExtreme"
+      "DevExtreme",
+      "RxJS",
+      "OData",
+      "Lodash"
     ]
   },
   {
@@ -51,7 +113,9 @@
       "CSS3",
       "Angular 5",
       "Angular Material",
-      "Cordova"
+      "RxJS",
+      "Cordova",
+      "HammerJS"
     ]
   },
   {
@@ -69,6 +133,9 @@
       "CSS3",
       "Angular 5",
       "Twitter Bootstrap",
+      "RxJS",
+      "OData",
+      "Lodash",
       "DevExtreme"
     ]
   },
@@ -282,26 +349,10 @@
     ]
   },
   {
-    "name": "Ex Toner",
-    "type": "Website",
-    "image": "img/projects/extoner/extoner.jpg",
-    "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
-    ],    
-    "link": "http://extoner.com.br",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "Javascript"
-    ]
-  },
-  {
     "name": "Ribeiro Advocacia",
     "type": "Website",
     "image": "img/projects/ribeiro/ribeiro.jpg",
-    "online": true,
+    "online": false,
     "background-gradient": [
       "#293037",
       "#293037"

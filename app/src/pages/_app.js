@@ -2,20 +2,21 @@ import App, { Container } from 'next/app';
 import Router from 'next/router';
 import React from 'react';
 
+import Root from '../styles/blocks/Root';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import * as gtag from '../utils/gtag';
+import * as gtag from '../misc/gtag';
 
 // Router.events.on('routeChangeComplete', url => gtag.pageview(url));
 
 const Layout = props => (
-  <div>
+  <Root>
     <Nav />
     <main>
       {props.children}
     </main>
     <Footer />
-  </div>
+  </Root>
 );
 
 
