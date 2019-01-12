@@ -15,6 +15,7 @@ const Projects = ({ projects }) => (
             href={project.link}
             target="_blank"
             rel="noopener nofollow"
+            gradient={project.gradient}
           >
             <ProjectsList.Item_Img src={`/static/${project.image}`} />
             <ProjectsList.Item_Title>{project.name}</ProjectsList.Item_Title>
