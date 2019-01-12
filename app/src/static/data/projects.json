@@ -64,8 +64,8 @@
     "image": "img/projects/actuar/plano-impacto.jpg",
     "online": false,
     "gradient": [
-      "#6f0000",
-      "#200122"
+      "#232526",
+      "#414345"
     ],
     "link": "https://actuar.com/planoimpacto",
     "stack": [
@@ -104,8 +104,8 @@
     "image": "img/projects/actuar/treino.jpg",
     "online": true,
     "gradient": [
-      "#ece9e6",
-      "#ffffff"
+      "#8FCDB1",
+      "#ece9e6"
     ],    
     "link": "https://trei.no",
     "stack": [
@@ -145,8 +145,8 @@
     "image": "img/projects/gustavo-sebba/gustavo-sebba.jpg",
     "online": false,
     "gradient": [
-      "#000428",
-      "#004e92"
+      "#000046",
+      "#1cb5e0"
     ],    
     "link": "http://www.gustavosebba.com.br",
     "stack": [
@@ -182,8 +182,8 @@
     "image": "img/projects/portal-telemedicina/portal-telemedicina.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#f2fcfe",
+      "#1c92d2"
     ],    
     "link": "",
     "stack": [
@@ -200,8 +200,8 @@
     "image": "img/projects/bus-gyn/bus-gyn.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#fe8c00",
+      "#f83600"
     ],    
     "link": "http://gabrielima.github.io/bus-gyn",
     "stack": [
@@ -217,8 +217,8 @@
     "image": "img/projects/minha-ufg/minha-ufg-landing.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#00c6ff",
+      "#0072ff"
     ],    
     "link": "http://minha.ufg.br",
     "stack": [
@@ -234,8 +234,8 @@
     "image": "img/projects/minha-ufg/minha-ufg-admin.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#1A5D9D",
+      "#0F527F"
     ],    
     "link": "http://minha.ufg.br/admin",
     "stack": [
@@ -252,8 +252,8 @@
     "image": "img/projects/minha-ufg/minha-ufg-pwa.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#00c6ff",
+      "#2781BD"
     ],    
     "link": "http://minha.ufg.br/app",
     "stack": [
@@ -270,8 +270,8 @@
     "image": "img/projects/image-editing/image-editing.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#E65F30",
+      "#162937"
     ],    
     "link": "http://gabrielima.github.io/image-editing/",
     "stack": [
@@ -287,8 +287,8 @@
     "image": "img/projects/calculadoria/calculadoria.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#000428",
+      "#004e92"
     ],    
     "link": "http://www.calculadoria.com.br/",
     "stack": [
@@ -303,8 +303,8 @@
     "image": "img/projects/route66/route66.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#AC3B44",
+      "#F7D143"
     ],    
     "link": "http://route66mi.com.br",
     "stack": [
@@ -320,8 +320,8 @@
     "image": "img/projects/hurricane/hurricane.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#F5F2ED",
+      "#722D2E"
     ],    
     "link": "",
     "stack": [
@@ -337,8 +337,8 @@
     "image": "img/projects/fgsl/fgsl.jpg",
     "online": true,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#18292D",
+      "#C8A240"
     ],    
     "link": "http://2016.fgsl.net",
     "stack": [
@@ -354,8 +354,8 @@
     "image": "img/projects/ribeiro/ribeiro.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#1A1A1A",
+      "#33A66D"
     ],    
     "link": "http://ribeirosadvocacia.adv.br",
     "stack": [
@@ -372,8 +372,8 @@
     "image": "img/projects/mounza/mounza.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#1A1A1A",
+      "#48B2E2"
     ],    
     "link": "",
     "stack": [
@@ -389,8 +389,8 @@
     "image": "img/projects/trak/trak.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#A82A48",
+      "#A62D49"
     ],    
     "link": "",
     "stack": [
@@ -407,8 +407,8 @@
     "image": "img/projects/alves/alves.jpg",
     "online": false,
     "gradient": [
-      "#293037",
-      "#293037"
+      "#6f0000",
+      "#200122"
     ],    
     "link": "",
     "stack": [
