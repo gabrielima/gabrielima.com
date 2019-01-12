@@ -13,7 +13,7 @@ const getDay = (day) => {
     case 3: return day + 'rd';
     default: return day + 'th';
   }
-}
+};
 
 const getMonth = (month) => {
   switch (month) {
@@ -30,4 +30,4 @@ const getMonth = (month) => {
     case 11: return 'Nov';
     case 12: return 'Dec';
   }
-}
+};

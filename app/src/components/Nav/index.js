@@ -2,6 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { Header, Menu, SocialMedia } from './NavStyles';
 
+import Twitter from '../../static/svg/twitter.svg';
+import Github from '../../static/svg/github.svg';
+import Linkedin from '../../static/svg/linkedin.svg';
+
 const menu = [
   { link: '/', name: 'Home' },
   { link: '/projects', name: 'Projects' },
@@ -9,10 +13,9 @@ const menu = [
 ];
 
 const social_media = [
-  { link: 'https://www.facebook.com/rabeloglr', name: 'facebook', icon: '' },
-  { link: 'https://twitter.com/rabeloglr', name: 'twitter', icon: '' },
-  { link: 'https://github.com/gabrielima', name: 'github', icon: '' },
-  { link: 'https://www.linkedin.com/in/gabrielima', name: 'linkedin', icon: '' },
+  { link: 'https://twitter.com/rabeloglr', name: 'twitter', icon: <Twitter /> },
+  { link: 'https://github.com/gabrielima', name: 'github', icon: <Github /> },
+  { link: 'https://www.linkedin.com/in/gabrielima', name: 'linkedin', icon: <Linkedin /> },
 ];
 
 const Nav = () => (
