@@ -21,11 +21,11 @@ const Projects = ({ projects }) => (
           </ProjectsList.Item_Link>
         </ProjectsList.Item>
       ))}
-
-      <Link href="projects">
-        <a>All Projects +</a>
-      </Link>
     </ProjectsList>
+
+    <Link href="projects">
+      <a>All Projects +</a>
+    </Link>
   </HomeSection>
 );
 
