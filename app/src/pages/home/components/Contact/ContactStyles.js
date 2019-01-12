@@ -6,7 +6,7 @@ const ContactContainer = styled.div``;
 
 ContactContainer.Link = styled.a`
   display: block;
-  margin: 4rem auto 0;
+  margin: 2rem auto 1rem;
   width: 90%;
   padding: 0 30px;
   max-width: 350px;
