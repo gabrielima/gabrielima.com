@@ -8,9 +8,10 @@ const FooterContainer = styled.footer`
 FooterContainer.Copy = styled.span`
   display: block;
   margin-top: 10px;
-
-  .heart { color: #ed213a; }
 `;
 
+FooterContainer.Heart = styled.span`
+  color: #ed213a;
+`;
 
 export default FooterContainer;

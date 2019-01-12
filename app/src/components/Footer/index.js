@@ -6,7 +6,7 @@ const year = (new Date()).getFullYear();
 const Footer = () => (
   <FooterContainer>
     <FooterContainer.Copy>
-      Made with <span class="heart">❤</span> in Brazil.
+      Made with <FooterContainer.Heart>❤</FooterContainer.Heart> in Brazil.
     </FooterContainer.Copy>
 
     <FooterContainer.Copy>
