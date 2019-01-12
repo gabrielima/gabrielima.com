@@ -4,12 +4,12 @@
     "type": "Website",
     "image": "img/projects/lyceu/lyceu.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#8e0e00",
+      "#1f1c18"
     ],
     "link": "https://lyceudegoiania.com.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "React",
@@ -23,12 +23,12 @@
     "type": "Website",
     "image": "img/projects/extoner/extoner.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#3a7bd5",
+      "#3a6073"
     ],
     "link": "http://extoner.com.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -45,12 +45,12 @@
     "type": "Web Application",
     "image": "img/projects/actuar/timers.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#093028",
+      "#237a57"
     ],
     "link": "http://trei.no/timer",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Angular 5",
@@ -63,12 +63,12 @@
     "type": "Landing Page",
     "image": "img/projects/actuar/plano-impacto.jpg",
     "online": false,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#6f0000",
+      "#200122"
     ],
     "link": "https://actuar.com/planoimpacto",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "JQuery",
@@ -81,12 +81,12 @@
     "type": "Web Application",
     "image": "img/projects/actuar/actuar-web.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#41295a",
+      "#2f0743"
     ],
     "link": "https://actuar.com",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Angular 5",
@@ -103,12 +103,12 @@
     "type": "Hybrid Mobile Application",
     "image": "img/projects/actuar/treino.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#ece9e6",
+      "#ffffff"
     ],    
     "link": "https://trei.no",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Angular 5",
@@ -123,12 +123,12 @@
     "type": "Web Application",
     "image": "img/projects/actuar/afig.jpg",
     "online": true,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#11998e",
+      "#38ef7d"
     ],    
     "link": "https://afig.actuar.com",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Angular 5",
@@ -144,12 +144,12 @@
     "type": "Website",
     "image": "img/projects/gustavo-sebba/gustavo-sebba.jpg",
     "online": false,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#000428",
+      "#004e92"
     ],    
     "link": "http://www.gustavosebba.com.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Wordpress"
@@ -160,12 +160,12 @@
     "type": "Web Application",
     "image": "img/projects/indices/indices.jpg",
     "online": false,
-    "background-gradient": [
-      "#293037",
-      "#293037"
+    "gradient": [
+      "#abbaab",
+      "#ffffff"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "AngularJS",
@@ -181,12 +181,12 @@
     "type": "Web Application",
     "image": "img/projects/portal-telemedicina/portal-telemedicina.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "AngularJS",
@@ -199,12 +199,12 @@
     "type": "Progressive Web App",
     "image": "img/projects/bus-gyn/bus-gyn.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://gabrielima.github.io/bus-gyn",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -216,12 +216,12 @@
     "type": "Landing Page",
     "image": "img/projects/minha-ufg/minha-ufg-landing.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://minha.ufg.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "SASS",
       "Javascript",
@@ -233,12 +233,12 @@
     "type": "Web Application",
     "image": "img/projects/minha-ufg/minha-ufg-admin.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://minha.ufg.br/admin",
-    "technologies": [
+    "stack": [
       "HTML5",
       "SASS",
       "AngularJS",
@@ -251,12 +251,12 @@
     "type": "Progressive Web App",
     "image": "img/projects/minha-ufg/minha-ufg-pwa.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://minha.ufg.br/app",
-    "technologies": [
+    "stack": [
       "HTML5",
       "SASS",
       "Angular 4",
@@ -269,12 +269,12 @@
     "type": "Web Application",
     "image": "img/projects/image-editing/image-editing.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://gabrielima.github.io/image-editing/",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -286,12 +286,12 @@
     "type": "Website",
     "image": "img/projects/calculadoria/calculadoria.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://www.calculadoria.com.br/",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript"
@@ -302,12 +302,12 @@
     "type": "E-commerce - Only Front-End",
     "image": "img/projects/route66/route66.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://route66mi.com.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "SASS",
       "Javascript",
@@ -319,12 +319,12 @@
     "type": "E-commerce - Only Front-End",
     "image": "img/projects/hurricane/hurricane.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "SASS",
       "Javascript",
@@ -336,12 +336,12 @@
     "type": "Website",
     "image": "img/projects/fgsl/fgsl.jpg",
     "online": true,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://2016.fgsl.net",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -353,12 +353,12 @@
     "type": "Website",
     "image": "img/projects/ribeiro/ribeiro.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "http://ribeirosadvocacia.adv.br",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -371,12 +371,12 @@
     "type": "Landing Page",
     "image": "img/projects/mounza/mounza.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
@@ -388,12 +388,12 @@
     "type": "Web Application",
     "image": "img/projects/trak/trak.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "AngularJS",
@@ -406,12 +406,12 @@
     "type": "Website",
     "image": "img/projects/alves/alves.jpg",
     "online": false,
-    "background-gradient": [
+    "gradient": [
       "#293037",
       "#293037"
     ],    
     "link": "",
-    "technologies": [
+    "stack": [
       "HTML5",
       "CSS3",
       "Javascript",
