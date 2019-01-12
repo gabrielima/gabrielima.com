@@ -59,7 +59,7 @@ ProjectsList.Item_Title = styled.span`
   background: #fff;
   padding: 15px 10px;
   width: 100%;
-  color: ${theme.colors.default}
+  color: ${theme.colors.default};
 `;
 
 export default ProjectsList;

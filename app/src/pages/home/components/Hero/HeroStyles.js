@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from '../../../../styles/utils/media';
+import theme from '../../../../styles/theme';
 
 const HeroContainer = styled.div`
   text-align: center;
@@ -16,7 +17,7 @@ HeroContainer.Title = styled.h1`
 
 HeroContainer.Subtitle = styled.h1`
   font-size: 1.2rem;
-  ${media.sm`font-size: 2rem;`}
+  ${media.sm`font-size: 2rem;`}  
 `;
 
 export default HeroContainer;
