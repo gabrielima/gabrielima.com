@@ -24,7 +24,7 @@ const Head = ({ title, description, url, ogImage, keywords }) => (
 
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:description" content={ description || defaults.description } />
-    <meta property="og:site_name" content="gabrielima.com - Gabriel Lima Web Developer" />
+    <meta property="og:site_name" content={ 'gabrielima.com - ' + defaults.title } />
     <meta property="og:title" content={ buildTitle(title) } />
     <meta property="og:image" content={ ogImage || defaults.ogImage } />
     <meta property="og:type" content="website" />
