@@ -25,6 +25,10 @@ ContactContainer.Link = styled.a`
   text-align: center;
   font-size: 20px;
   transition: .45s;
+
+  :hover {
+    background-color: ${theme.colors.primary_active};
+  }
 `;
 
 export default ContactContainer;
