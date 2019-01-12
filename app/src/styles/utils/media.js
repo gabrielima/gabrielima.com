@@ -17,4 +17,9 @@ const media = Object.keys(sizes).reduce((acc, label) => {
   return acc
 }, {});
 
+// example of usage
+// ${media.sm`
+//   justify-content: space-between;
+// `}
+
 export default media;
