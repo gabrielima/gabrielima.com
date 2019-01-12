@@ -1,13 +1,14 @@
 import React from 'react';
 
 import HomeSection from '../../HomeStyles';
+import HeroContainer from './HeroStyles';
 
 const Hero = () => (
   <HomeSection>
-    <div>
-      <h1>Gabriel Lima</h1>
-      <h2>Web Developer</h2>
-    </div>
+    <HeroContainer>
+      <HeroContainer.Title>Gabriel Lima</HeroContainer.Title>
+      <HeroContainer.Subtitle>Full Stack Developer</HeroContainer.Subtitle>
+    </HeroContainer>
   </HomeSection>
 );
 
