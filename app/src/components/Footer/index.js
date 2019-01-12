@@ -1,9 +1,12 @@
 import React from 'react';
+import FooterContainer from './FooterStyles';
+
+const year = (new Date()).getFullYear();
 
 const Footer = () => (
-  <footer className="footer">
-    <p className="footer__copy">Copyright 2018 - Gabriel Lima</p>
-  </footer>
+  <FooterContainer>
+    <FooterContainer.Copy>Copyright { year } - Gabriel Lima</FooterContainer.Copy>
+  </FooterContainer>
 );
 
 export default Footer;
