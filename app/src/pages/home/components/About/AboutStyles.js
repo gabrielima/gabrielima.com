@@ -47,7 +47,7 @@ AboutContainer.Link = styled.a`
   text-decoration: none;
   width: 100px;
   color: ${theme.colors.default};
-  transition: background-color .4s ease;
+  transition: all .4s ease;
 
   :hover {
     background-color: ${theme.colors.primary};

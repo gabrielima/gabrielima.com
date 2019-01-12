@@ -23,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.colors.default};
   }
 
+  #__next { min-heigth: 100%; }
+
   svg path {
     fill: ${theme.colors.default};
   }

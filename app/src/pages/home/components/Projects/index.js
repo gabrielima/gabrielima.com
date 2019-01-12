@@ -24,7 +24,7 @@ const Projects = ({ projects }) => (
     </ProjectsList>
 
     <Link href="projects">
-      <a>All Projects +</a>
+      <HomeSection.Link>All Projects +</HomeSection.Link>
     </Link>
   </HomeSection>
 );

@@ -13,7 +13,7 @@ Index.getInitialProps = async function () {
   const posts = await getPosts();
   let projects = await getProjects();
 
-  projects = projects.splice(0, 7);
+  projects = projects.slice(0, 6);
 
   return {
     personal_info,

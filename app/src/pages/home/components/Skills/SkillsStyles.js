@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import media from './../../../../styles/utils/media';
+import theme from './../../../../styles/theme';
 
 const SkillsContainer = styled.div`
 `;
@@ -44,6 +45,14 @@ SkillsContainer.List_Item = styled.li`
   border: 1px solid;
   font-size: 0.7rem;
   margin: 4px;
+  cursor: pointer;
+  transition: all .4s ease;
+
+  :hover {
+    background-color: ${theme.colors.primary};
+    border-color: ${theme.colors.primary};
+    color: #fff;
+  }
 `;
 
 export default SkillsContainer;

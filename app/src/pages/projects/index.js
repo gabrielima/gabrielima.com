@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 
 import Head from './../../components/Head';
 import { getProjects } from './../../services/projects';
+import ProjectsContainer from './ProjectsStyles';
 
 const Project = ({ project }) => (
   <a href={project.link} target="_blank" rel="noopener nofollow">
@@ -16,10 +17,10 @@ const Projects = ({ projects }) => (
   <Fragment>
     <Head title="Projects" />
 
-    <section>
-      <h1>Projects</h1>
+    <ProjectsContainer>
+      <ProjectsContainer.Title>Projects</ProjectsContainer.Title>
       {projects.map((project, index) => <Project key={index} project={project} />)}
-    </section>
+    </ProjectsContainer>
   </Fragment>
 );
 

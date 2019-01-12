@@ -23,7 +23,7 @@ const Posts = ({ posts }) => (
     </PostsList>
 
     <Link href="/blog">
-      <a>All Posts +</a>
+      <HomeSection.Link>All Posts +</HomeSection.Link>
     </Link>
   </HomeSection>
 );
