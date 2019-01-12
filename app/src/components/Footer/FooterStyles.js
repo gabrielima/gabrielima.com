@@ -6,7 +6,10 @@ const FooterContainer = styled.footer`
 `;
 
 FooterContainer.Copy = styled.span`
+  display: block;
+  margin-top: 10px;
 
+  .heart { color: #ed213a; }
 `;
 
 

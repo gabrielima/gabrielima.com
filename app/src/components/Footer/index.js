@@ -5,7 +5,17 @@ const year = (new Date()).getFullYear();
 
 const Footer = () => (
   <FooterContainer>
-    <FooterContainer.Copy>Copyright { year } - Gabriel Lima</FooterContainer.Copy>
+    <FooterContainer.Copy>
+      Made with <span class="heart">❤</span> in Brazil.
+    </FooterContainer.Copy>
+
+    <FooterContainer.Copy>
+      Built with NextJS and styled-components
+    </FooterContainer.Copy>
+
+    <FooterContainer.Copy>
+      Copyright { year } - Gabriel Lima
+    </FooterContainer.Copy>
   </FooterContainer>
 );
 
