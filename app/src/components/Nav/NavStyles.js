@@ -6,7 +6,7 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
   padding: 15px 0;
   
@@ -23,11 +23,13 @@ const Menu = styled.nav`
 Menu.Item = styled.a`
   text-decoration: none;
   padding: 10px;
+  margin-top: 10px;
   cursor: pointer;
 
   :hover { color: ${theme.colors.primary}; }
 
   ${media.sm`
+    margin-top: 0;
     :first-child { margin-left: -10px; }
   `}
 `;
@@ -37,11 +39,9 @@ const SocialMedia = styled.div``;
 SocialMedia.Item = styled.a`
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 10px;
   transition: transform .3s ease;
   
   ${media.sm`
-    margin-top: 0;
     :last-child { margin-right: -20px; }
   `}
   
