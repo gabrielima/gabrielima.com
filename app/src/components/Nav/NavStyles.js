@@ -8,8 +8,7 @@ const Header = styled.header`
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px 0;
-  border-bottom: 5px solid ${theme.colors.primary};
+  padding: 15px 0;
   
   ${media.sm`
     justify-content: space-between;
