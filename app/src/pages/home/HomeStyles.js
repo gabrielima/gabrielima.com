@@ -24,6 +24,8 @@ HomeSection.Title = styled.h3`
 `;
 
 HomeSection.Link = styled.a`
+  display: inline-block;
+  margin: 0 auto;
   color: ${theme.colors.primary};
   border-bottom: 4px solid;
   cursor: pointer;

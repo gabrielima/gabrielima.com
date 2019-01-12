@@ -6,7 +6,7 @@ const ProjectsList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   list-style: none;
   padding: 0;
   margin: 0 0 30px;
