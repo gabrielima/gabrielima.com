@@ -12,16 +12,17 @@ const AboutContainer = styled.div`
 `;
 
 AboutContainer.Child = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   :last-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 10px 0;
-  }
 
-  ${media.sm`
-    padding: 20px;
-  `}
+    ${media.sm`
+      padding: 20px;
+    `}
+  }
 `;
 
 AboutContainer.Image = styled.img`
@@ -34,7 +35,8 @@ AboutContainer.Image = styled.img`
 
 AboutContainer.Bio = styled.p`
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.5;
+  margin-top: 0;
 `;
 
 AboutContainer.Link = styled.a`
