@@ -1,11 +1,10 @@
 import App, { Container } from 'next/app';
-import Router from 'next/router';
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import Root from '../styles/blocks/Root';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import * as gtag from '../misc/gtag';
+import Root from '../styles/blocks/Root';
+import GlobalStyle from '../styles/GlobalStyle';
 
 // Router.events.on('routeChangeComplete', url => gtag.pageview(url));
 
@@ -35,11 +34,14 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </Container>
+      <Fragment>
+        <GlobalStyle />
+        <Container>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </Container>
+      </Fragment>
     )
   }
 }
