@@ -17,7 +17,7 @@ const About = ({ bio }) => (
           { bio }
         </AboutContainer.Bio>
 
-        <AboutContainer.Link href="/static/resume.pdf" target="_blank" rel="noopener nofollow">
+        <AboutContainer.Link href="/static/CV-Gabriel-de-Lima-Rabelo.pdf" target="_blank" rel="noopener nofollow">
           Resume
         </AboutContainer.Link>
       </AboutContainer.Child>
