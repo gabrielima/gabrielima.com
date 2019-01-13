@@ -5,6 +5,6 @@
     "start": "cd app && npm run dev",
     "build": "cd app && npm run export",
     "deploy:firebase": "firebase deploy --only hosting",
-    "deploy": "npm run build && deploy:firebase && rm -rf public"
+    "deploy": "npm run build && npm run deploy:firebase && rm -rf public"
   }
 }
