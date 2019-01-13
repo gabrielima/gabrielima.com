@@ -285,7 +285,7 @@
     "name": "Calculadoria",
     "type": "Website",
     "image": "img/projects/calculadoria/calculadoria.jpg",
-    "online": true,
+    "online": false,
     "gradient": [
       "#000428",
       "#004e92"
@@ -301,7 +301,7 @@
     "name": "Route 66",
     "type": "E-commerce - Only Front-End",
     "image": "img/projects/route66/route66.jpg",
-    "online": true,
+    "online": false,
     "gradient": [
       "#AC3B44",
       "#F7D143"
