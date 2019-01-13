@@ -35,6 +35,7 @@ const Nav = () => (
           href={social.link}
           target="_blank"
           rel="noopener nofollow"
+          aria-label={social.name}
         >
           {social.icon}
         </SocialMedia.Item>
