@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next ./src",
     "build": "next build ./src",
-    "export": "next build ./src && next export ./src && mv ./src/out ./public",
+    "export": "cd ./src && next build && next export && mv ./src/out ../public",
     "start": "next star ./srct"
   },
   "dependencies": {

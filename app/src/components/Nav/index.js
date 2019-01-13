@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import { Header, Menu, SocialMedia } from './NavStyles';
 
-import Twitter from '../../static/svg/twitter.svg';
-import Github from '../../static/svg/github.svg';
-import Linkedin from '../../static/svg/linkedin.svg';
+import Twitter from '../../static/svg/twitter-logo.svg';
+import Github from '../../static/svg/github-logo.svg';
+import Linkedin from '../../static/svg/linkedin-logo.svg';
 
 const menu = [
   { link: '/', name: 'Home' },

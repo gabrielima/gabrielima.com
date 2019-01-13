@@ -1,0 +1,10 @@
+{
+  "name": "gabrielima",
+  "version": "6.0.0",
+  "scripts": {
+    "start": "cd app && npm run dev",
+    "build": "cd app && npm run export",
+    "deploy:firebase": "firebase deploy --only hosting",
+    "deploy": "npm run build && deploy:firebase && rm -rf public"
+  }
+}
