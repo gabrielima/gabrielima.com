@@ -5,7 +5,7 @@ import { getProjects } from './../../services/projects';
 import { ProjectsContainer, ProjectsItem } from './ProjectsStyles';
 
 const Project = ({ project }) => (
-  <ProjectsItem href={project.link} target="_blank" rel="noopener nofollow">
+  <ProjectsItem href={project.link} target="_blank" rel="noopener nofollow" disabled={!project.online}>
     <ProjectsItem.ImageWrapper gradient={project.gradient}>
       <ProjectsItem.Image src={`/static/${project.image}`} alt={project.name} />
     </ProjectsItem.ImageWrapper>

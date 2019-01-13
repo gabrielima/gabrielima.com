@@ -59,6 +59,7 @@ ProjectsContainer.List_Item = styled.li`
 export const ProjectsItem = styled.a`
   text-decoration: none;
   color: ${theme.colors.default};
+  pointer-events: ${props => props.disabled ? 'none' : 'initial'};
 `;
 
 ProjectsItem.ImageWrapper = styled.div`

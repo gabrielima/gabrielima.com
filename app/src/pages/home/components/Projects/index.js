@@ -16,6 +16,7 @@ const Projects = ({ projects }) => (
             target="_blank"
             rel="noopener nofollow"
             gradient={project.gradient}
+            disabled={!project.online}
           >
             <ProjectsList.Item_Img src={`/static/${project.image}`} alt={project.name}/>
             <ProjectsList.Item_Title>{project.name}</ProjectsList.Item_Title>

@@ -37,6 +37,7 @@ ProjectsList.Item_Link = styled.a`
   overflow: hidden;
   background: ${props => props['gradient'][0]};
   background: ${props => `linear-gradient(to bottom right, ${props['gradient'][0]}, ${props['gradient'][1]})`};
+  pointer-events: ${props => props.disabled ? 'none' : 'initial'};
 
   :hover {
     img { bottom: -1px }
