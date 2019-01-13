@@ -9,14 +9,16 @@ const Skills = ({ skills }) => (
 
     <SkillsContainer>
       {skills && skills.map((area, index) => (
-        <SkillsContainer.Area>
+        <SkillsContainer.Area key={index}>
           <SkillsContainer.Area_Name>
             <span>{area.area}:</span>
           </SkillsContainer.Area_Name>
           
           <SkillsContainer.List>
             {area.skills.map((skill, index) => (
-              <SkillsContainer.List_Item key={index}>{skill}</SkillsContainer.List_Item>
+              <SkillsContainer.List_Item key={index}>
+                {skill}
+              </SkillsContainer.List_Item>
             ))}
           </SkillsContainer.List>
         </SkillsContainer.Area>
