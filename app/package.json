@@ -4,8 +4,9 @@
   "scripts": {
     "dev": "next ./src",
     "build": "next build ./src",
-    "export": "cd ./src && next build && next export && mv ./src/out ../public",
-    "start": "next star ./srct"
+    "export": "cd ./src && next build && next export && cp -R ./out ../../public && npm run clean",
+    "start": "next start ./src",
+    "clean": "rm -rf ./src/out && rm -rf ./dist"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
