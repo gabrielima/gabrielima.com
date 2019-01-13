@@ -18,7 +18,6 @@ const Layout = props => (
   </Root>
 );
 
-
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};

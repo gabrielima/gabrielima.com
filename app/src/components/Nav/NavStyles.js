@@ -21,6 +21,7 @@ const Menu = styled.nav`
 `;
 
 Menu.Item = styled.a`
+  display: inline-block;
   text-decoration: none;
   padding: 10px;
   margin-top: 10px;

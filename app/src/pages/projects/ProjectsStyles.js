@@ -13,7 +13,7 @@ export const ProjectsContainer = styled.section`
 ProjectsContainer.Title = styled.h1`
   display: inline-block;
   position: relative;
-  margin: 1rem;
+  margin: 1rem 1rem 2rem;
   font-size: 2.5rem;
   ${media.sm`font-size: 3.2rem;`}
 

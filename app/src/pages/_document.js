@@ -1,7 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-import { GA_TRACKING_ID } from '../services/gtag';
+// import { GA_TRACKING_ID } from '../services/gtag';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -18,14 +18,14 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en-US">
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
+          {/* <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
-          <script
+          /> */}
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}');
           `}}
-          />          
+          />           */}
           {this.props.styleTags}
         </Head>
         <body>
