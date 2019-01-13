@@ -6,3 +6,4 @@ tmp
 .next
 yarn.lock
 dist
+out
