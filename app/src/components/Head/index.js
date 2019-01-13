@@ -12,7 +12,7 @@ const Head = ({ title, description, url, ogImage, keywords }) => (
     <meta httpEquiv="cache-control" content="no-cache" />
     <meta httpEquiv="revisit-after" content="7 days" />
 
-    <meta name="description" content={ description | defaults.description } />
+    <meta name="description" content={ description || defaults.description } />
     <meta name="generator" content={ defaults.url } />
     <meta name="webmaster" content="Gabriel Lima" />
     <meta name="viewport" content="initial-scale=1, user-scalable=yes" />
