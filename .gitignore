@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache
+node_modules
+dist
+tmp
+.next
+yarn.lock
+dist
+out
+public
