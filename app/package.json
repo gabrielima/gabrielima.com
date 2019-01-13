@@ -2,9 +2,10 @@
   "name": "gabrielima",
   "version": "6.0.0",
   "scripts": {
-    "dev": "cd src && next",
-    "build": "cd src && next build",
-    "start": "cd src && next start"
+    "dev": "next ./src",
+    "build": "next build ./src",
+    "export": "next build ./src && next export ./src && mv ./src/out ./public",
+    "start": "next star ./srct"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
