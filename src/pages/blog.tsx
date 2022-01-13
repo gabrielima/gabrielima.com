@@ -1,11 +1,14 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
+import { getPosts } from '../services/posts';
 
-import Head from '../../components/Head';
-import { formatDate } from './../../misc/date-formatter';
-import { getPosts } from './../../services/posts';
-import BlogContainer from './BlogStyles';
+import BlogContainer from './../styles/pages/BlogStyles';
+import Head from './components/CustomHead';
+
+const formatDate: any = (date: any) => {
+  return date.toString();
+}
 
 const Post = ({ post }: any) => (
   <div>
@@ -17,7 +20,7 @@ const Post = ({ post }: any) => (
 );
 
 const Blog: NextPage = ({ posts }: any) => (
-  <Fragment>
+  <>
     <Head title="Blog" />
 
     <BlogContainer>
@@ -26,7 +29,7 @@ const Blog: NextPage = ({ posts }: any) => (
 
       <p style={{'marginTop': '5rem'}}>Work in progress.</p>
     </BlogContainer>
-  </Fragment>
+  </>
 );
 
 Blog.getInitialProps = async function () {
