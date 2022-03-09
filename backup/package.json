@@ -5,7 +5,7 @@
     "dev": "next ./src",
     "build": "next build ./src",
     "export": "cd ./src && next build && next export && mv ./src/out ../public",
-    "start": "next star ./srct"
+    "start": "next start ./src"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",

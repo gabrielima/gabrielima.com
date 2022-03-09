@@ -1,12 +1,12 @@
 {
-  "bio": "Computer science graduate with 7+ years of experience in full stack development and computer programming with problem solving skills. Former researcher at the PixelLab - Computer Vision Laboratory - and former member of the Advanced Programming Techniques Team of the Federal University of Goias. Finalist at the Brazilian ACM Programming Contest of 2013. Exchange program at Temple University, Philadelphia - PA. Experience as a web developer at a startup in the silicon valley.",
+  "bio": "Computer science graduate with 8+ years of experience in full stack development and computer programming with problem solving skills. Former researcher at the PixelLab - Computer Vision Laboratory - and former member of the Advanced Programming Techniques Team of the Federal University of Goias. Finalist at the Brazilian ACM Programming Contest of 2013. Exchange program at Temple University, Philadelphia - PA. Experience as a web developer at a startup in the silicon valley.",
   "email": "rabeloglr@gmail.com",
   "skills": [
-    { 
+    {
       "area": "Front-End",
       "skills": [
-        "HTML5", 
-        "CSS3", 
+        "HTML5",
+        "CSS3",
         "Javascript",
         "AngularJS / Angular 2+",
         "Angular Material",
@@ -22,7 +22,7 @@
         "Gulp"
       ]
     },
-    { 
+    {
       "area": "Back-End",
       "skills": [
         "NodeJS",
@@ -32,22 +32,22 @@
         "Spring Boot"
       ]
     },
-    { 
+    {
       "area": "Mobile",
       "skills": [
-        "Ionic", 
+        "Ionic",
         "Cordova"
       ]
     },
-    { 
+    {
       "area": "Database",
       "skills": [
-        "PostgreSQL", 
-        "MySQL", 
+        "PostgreSQL",
+        "MySQL",
         "Firebase"
       ]
     },
-    { 
+    {
       "area": "Misc",
       "skills": [
         "Git",
