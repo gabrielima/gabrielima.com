@@ -11,7 +11,6 @@ import Skeleton from "../../components/Skeleton";
 import markdownToHtml from "../../lib/markdown-to-html";
 
 const styles = {
-  post: "bg-sky-50 grow flex px-2 lg:px-10 py-4 lg:py-8",
   container: "max-w-5xl mx-auto w-full py-8 lg:py-10 px-5 lg:px-10 bg-white rounded-md shadow-md",
   main: "max-w-2xl mx-auto prose",
   title: "text-sky-600 font-extrabold text-3xl sm:text-4xl md:text-5xl",
@@ -43,7 +42,7 @@ const BlogPost = ({ post }: any) => {
         )}
       </div>
 
-      <div className={styles.post}>
+      <div className={page.content}>
         <div className={styles.container}>
           {router.isFallback ? (
             <Skeleton />
