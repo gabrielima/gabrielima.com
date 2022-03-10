@@ -29,7 +29,7 @@ const Home: NextPage = ({ personalInfo, projects, posts }: any) => {
 export default Home;
 
 export function getStaticProps() {
-  const posts: any = PostService.getPosts(6);
+  const posts: any = PostService.getPosts(["title", "createdAt", "slug"], 6);
 
   return {
     props: { personalInfo, projects, posts },
