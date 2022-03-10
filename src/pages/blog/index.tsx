@@ -1,10 +1,10 @@
-import Meta from "../components/Meta";
-import PostCard from "../components/PostCard";
-import page from "../styles/page";
+import Meta from "../../components/Meta";
+import PostCard from "../../components/PostCard";
+import page from "../../styles/page";
 
 const styles = {
-  posts: "bg-sky-50 grow flex",
-  container: "max-w-7xl mx-auto w-full px-8 py-10 lg:py-16",
+  posts: "bg-sky-50 grow flex px-8 py-10 lg:py-16",
+  container: "max-w-7xl mx-auto w-full",
   list: "grid gap-10 grid-cols-1 lg:grid-cols-2",
 };
 

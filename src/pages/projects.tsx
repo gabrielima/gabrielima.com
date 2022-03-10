@@ -4,8 +4,8 @@ import allProjects from "../data/projects.json";
 import page from "../styles/page";
 
 const styles = {
-  projects: "bg-sky-50",
-  container: "max-w-7xl mx-auto w-full px-8 py-10 lg:py-16",
+  projects: "bg-sky-50 px-8 py-10 lg:py-16",
+  container: "max-w-7xl mx-auto w-full",
   list: "grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
 };
 
