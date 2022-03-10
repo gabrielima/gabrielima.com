@@ -29,7 +29,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
-        <body>
+        <body className="flex flex-col">
           <Main />
           <NextScript />
         </body>

@@ -45,12 +45,14 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div className={styles.navWrapper}>
-      <nav className={styles.nav} aria-label="Global">
-        <NavHamburgerButton setNavOpen={setNavOpen} />
-        <DesktopNav />
-        <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
-      </nav>
+    <div>
+      <div className={styles.navWrapper}>
+        <nav className={styles.nav} aria-label="Global">
+          <NavHamburgerButton setNavOpen={setNavOpen} />
+          <DesktopNav />
+          <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
+        </nav>
+      </div>
     </div>
   );
 };

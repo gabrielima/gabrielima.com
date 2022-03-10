@@ -12,6 +12,10 @@ dayjs.locale("pt-br");
 
 const GA_TRACKING_ID = "";
 
+const styles = {
+  main: "flex flex-col grow",
+};
+
 const App = ({ Component, pageProps }: any) => {
   return (
     <>
@@ -37,7 +41,9 @@ const App = ({ Component, pageProps }: any) => {
         }}
       />
       <Header />
-      <Component {...pageProps} />
+      <main className={styles.main}>
+        <Component {...pageProps} />
+      </main>
       <Footer />
     </>
   );

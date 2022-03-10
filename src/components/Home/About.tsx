@@ -2,7 +2,7 @@ import Image from "next/image";
 import section from "./../../styles/section";
 
 const styles = {
-  about: "bg-sky-50",
+  about: "bg-gray-50",
   bio: "flex lg:items-center flex-col lg:flex-row",
   bioImageWrapper: "max-w-[200px] lg:max-w-full lg:w-full",
   bioImage: " rounded-md",

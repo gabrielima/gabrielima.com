@@ -4,4 +4,13 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+
+body,
+#__next,
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

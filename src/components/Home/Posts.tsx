@@ -1,13 +1,13 @@
 import Link from "next/link";
 import section from "../../styles/section";
 import dayjs from "dayjs";
+import { AiOutlinePlus } from "react-icons/ai";
+import PostCard from "../PostCard";
 
 const styles = {
-  posts: "bg-gray-50",
-  list: "mt-12 lg:mt-18",
-  link: "text-gray-800 flex flex-col lg:flex-row justify-between mb-7",
-  title: "underline underline-offset-4",
-  date: "text-sm text-gray-600 mt-2 lg:mt-0",
+  posts: "bg-sky-50",
+  container: "mt-12 lg:mt-18",
+  list: "grid gap-10 grid-cols-1 lg:grid-cols-2",
 };
 
 const Posts = ({ posts }: any) => (
@@ -18,18 +18,25 @@ const Posts = ({ posts }: any) => (
         <span className={section.titleUnderline}></span>
       </h3>
 
-      <ul className={styles.list}>
-        {posts?.map((post: any, index: number) => (
-          <li key={index}>
-            <Link href={`/blog/${posts.slug}`} passHref>
-              <a className={styles.link}>
-                <span className={styles.title}>{post.title}</span>
-                <span className={styles.date}>{dayjs(new Date(post.createdAt)).format("YYYY-MM-DD")}</span>
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.posts}>
+        <div className={styles.container}>
+          <ul className={styles.list}>
+            {posts?.map((post: any, index: number) => (
+              <li key={index}>
+                <PostCard post={post} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={section.moreButtonWrapper}>
+          <Link href="/blog" passHref>
+            <a className={section.moreButton}>
+              <span className="mr-2">More Posts</span>
+              <AiOutlinePlus />
+            </a>
+          </Link>
+        </div>
+      </div>
     </div>
   </section>
 );
