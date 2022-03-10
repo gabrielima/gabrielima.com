@@ -22,7 +22,9 @@ const Skills = ({ skills }: any) => (
 
           <div className={styles.list}>
             {skills.map((skill: any, index: number) => (
-              <div className={styles.skill}>{skill}</div>
+              <div className={styles.skill} key={index}>
+                {skill}
+              </div>
             ))}
           </div>
         </div>

@@ -6,7 +6,7 @@
     "online": true,
     "gradient": ["#8e0e00", "#1f1c18"],
     "link": "https://lyceudegoiania.com.br",
-    "stack": ["HTML5", "CSS3", "React", "Firebase Realtime Database", "Firebase Hosting", "SEO"]
+    "stack": ["NextJS"]
   },
   {
     "name": "Ex Toner",
@@ -15,17 +15,7 @@
     "online": true,
     "gradient": ["#3a7bd5", "#3a6073"],
     "link": "http://extoner.com.br",
-    "stack": [
-      "HTML5",
-      "CSS3",
-      "Javascript",
-      "NodeJS",
-      "ExpressJS",
-      "EJS",
-      "Firebase Realtime Database",
-      "Firebase Cloud Functions",
-      "Firebase Hosting"
-    ]
+    "stack": ["NextJS"]
   },
   {
     "name": "Timer/Cronômetro/Tabata",
@@ -52,7 +42,17 @@
     "online": true,
     "gradient": ["#41295a", "#2f0743"],
     "link": "https://actuar.com",
-    "stack": ["HTML5", "CSS3", "Angular 5", "Typescript", "Twitter Bootstrap", "DevExtreme", "RxJS", "OData", "Lodash"]
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Typescript",
+      "Twitter Bootstrap",
+      "DevExtreme",
+      "RxJS",
+      "OData",
+      "Lodash"
+    ]
   },
   {
     "name": "Trei.no",
@@ -70,7 +70,16 @@
     "online": true,
     "gradient": ["#11998e", "#38ef7d"],
     "link": "https://afig.actuar.com",
-    "stack": ["HTML5", "CSS3", "Angular 5", "Twitter Bootstrap", "RxJS", "OData", "Lodash", "DevExtreme"]
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Angular 5",
+      "Twitter Bootstrap",
+      "RxJS",
+      "OData",
+      "Lodash",
+      "DevExtreme"
+    ]
   },
   {
     "name": "Deputado Estadual Gustavo Sebba",
@@ -88,7 +97,16 @@
     "online": false,
     "gradient": ["#abbaab", "#ffffff"],
     "link": "",
-    "stack": ["HTML5", "CSS3", "AngularJS", "Twitter Bootstrap", "Charts.JS", "Java", "Spring Boot", "Web Sockets"]
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "AngularJS",
+      "Twitter Bootstrap",
+      "Charts.JS",
+      "Java",
+      "Spring Boot",
+      "Web Sockets"
+    ]
   },
   {
     "name": "Portal Telemedicina",

@@ -18,7 +18,13 @@ const About = ({ bio }: any) => (
 
       <div className={styles.bio}>
         <div className={styles.bioImageWrapper}>
-          <Image className={styles.bioImage} src="/gabrielima.jpg" width={274} height={294} alt="Gabriel Lima" />
+          <Image
+            className={styles.bioImage}
+            src="/gabrielima.jpg"
+            width={274}
+            height={294}
+            alt="Gabriel Lima"
+          />
         </div>
         <div className={styles.bioText}>{bio}</div>
       </div>
