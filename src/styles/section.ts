@@ -4,7 +4,7 @@ const section = {
   titleUnderline: "absolute bottom-0 -mb-2 w-12 h-2 bg-sky-600 block",
   moreButtonWrapper: "flex",
   moreButton:
-    "flex items-center my-7 lg:my-15 border border-gray-700 p-2 px-3 rounded-md hover:bg-gray-700 hover:text-white",
+    "flex items-center my-7 lg:my-15 border border-gray-700 p-2 px-3 rounded-md hover:bg-slate-700 hover:text-white",
 };
 
 export default section;

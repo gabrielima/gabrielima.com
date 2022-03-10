@@ -1,56 +1,91 @@
+import "prismjs/themes/prism-okaidia.min.css";
+
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import Meta from "../../components/Meta";
+import ErrorPage from "next/error";
 import page from "../../styles/page";
 import dayjs from "dayjs";
+import PostService from "../../services/PostsService";
+import { useRouter } from "next/router";
+import Skeleton from "../../components/Skeleton";
+import markdownToHtml from "../../lib/markdown-to-html";
 
 const styles = {
-  post: "bg-sky-50 grow flex px-8 py-4 lg:py-8",
-  container: "max-w-7xl mx-auto w-full",
-  card: "py-8 lg:py-10 px-10 bg-white rounded-md shadow-md",
-  article: "max-w-2xl mx-auto",
+  post: "bg-sky-50 grow flex px-2 lg:px-10 py-4 lg:py-8",
+  container: "max-w-5xl mx-auto w-full py-8 lg:py-10 px-5 lg:px-10 bg-white rounded-md shadow-md",
+  main: "max-w-2xl mx-auto prose",
   title: "text-sky-600 font-extrabold text-3xl sm:text-4xl md:text-5xl",
-  subtitle: "mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl mx-auto md:mt-5 md:text-xl",
+  subtitle:
+    "mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl mx-auto md:mt-5 md:text-xl",
 };
 
-const BlogPost = ({ post, slug }: any) => (
-  <>
-    <Meta title={`${post?.title} | Gabriel Lima`} description={post?.text.substring(0, 60)} />
+const BlogPost = ({ post }: any) => {
+  const router = useRouter();
 
-    <div className={page.hero}>
-      <h1 className={styles.title}>{post?.title}</h1>
-      <p className={styles.subtitle}>{dayjs(new Date(post?.createdAt)).format("YYYY-MM-DD")}</p>
-    </div>
+  if (!router.isFallback && !post?.slug) {
+    return <ErrorPage statusCode={404} />;
+  }
 
-    <div className={styles.post}>
-      <div className={styles.container}>
-        <div className={styles.card}>
-          <article className={styles.article}>{post?.text}</article>
+  return (
+    <>
+      <Meta title={`${post?.title} | Gabriel Lima`} description={post?.content?.substring(0, 60)} />
+
+      <div className={page.hero}>
+        {router.isFallback ? (
+          <Skeleton />
+        ) : (
+          <>
+            <h1 className={styles.title}>{post?.title}</h1>
+            <p className={styles.subtitle}>
+              {dayjs(new Date(post?.createdAt)).format("YYYY-MM-DD")}
+            </p>
+          </>
+        )}
+      </div>
+
+      <div className={styles.post}>
+        <div className={styles.container}>
+          {router.isFallback ? (
+            <Skeleton />
+          ) : (
+            <div className={styles.main} dangerouslySetInnerHTML={{ __html: post?.content }} />
+          )}
         </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 export default BlogPost;
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = PostService.getAllPosts(["slug"]);
+
   return {
-    paths: [],
-    fallback: true,
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      };
+    }),
+    fallback: false,
   };
 };
 
 export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
   const { slug }: any = context.params;
-  let post: any = {
-    slug: "Conhecendo-o-sistema-SAP-1",
-    title: "Conhecendo o sistema SAP - parte 1",
-    createdAt: new Date().getTime(),
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quibusdam repudiandae nobis dignissimos architecto doloremque modi, similique dolore accusantium mollitia ullam quos quod aliquid. Doloremque officia explicabo reprehenderit amet aliquid?",
-  };
+  const post: any = PostService.getPostBySlug(slug, [
+    "title",
+    "createdAt",
+    "slug",
+    "author",
+    "content",
+  ]);
+  const content = await markdownToHtml(post.content || "");
 
   return {
-    props: { post, slug },
+    props: { post: { ...post, content } },
     revalidate: 5000,
   };
 };

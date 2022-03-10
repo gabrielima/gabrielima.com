@@ -8,19 +8,19 @@ const styles = {
     links: "hidden md:block md:pr-4 md:space-x-8",
     link: "font-medium text-gray-500 hover:text-gray-900",
     socialLinks: "hidden md:flex md:pr-4 md:space-x-8 justify-around items-center",
-    socialLink: "rounded text-gray-700 hover:text-gray-900 hover:bg-gray-100 p-3",
+    socialLink: "rounded text-gray-700 hover:text-gray-900 hover:bg-sky-50 p-3",
   },
   mobileNav: {
     container: "absolute z-10 top-0 inset-x-0 transition transform origin-top-right md:hidden",
     box: "rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden",
     close: "px-2 pt-2 flex items-center justify-between",
     links: "px-2 pt-2 pb-3 space-y-1",
-    link: "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50",
+    link: "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-sky-50",
     socialLinks: "px-5 py-1 space-y-1 border-t-2 flex justify-around items-center",
-    socialLink: "rounded text-gray-700 hover:text-gray-900 hover:bg-gray-100 p-3",
+    socialLink: "rounded text-gray-700 hover:text-gray-900 hover:bg-sky-50 p-3",
   },
   openCloseNavButton:
-    "bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500",
+    "bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-sky-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500",
 };
 const navLinks: any = [
   { href: "/", label: "Home" },

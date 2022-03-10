@@ -9,6 +9,7 @@ import Meta from "../components/Meta";
 
 import personalInfo from "../data/personal-info.json";
 import projects from "../data/projects.json";
+import PostService from "../services/PostsService";
 
 const Home: NextPage = ({ personalInfo, projects, posts }: any) => {
   return (
@@ -28,28 +29,7 @@ const Home: NextPage = ({ personalInfo, projects, posts }: any) => {
 export default Home;
 
 export function getStaticProps() {
-  const posts: any = [
-    {
-      slug: "Conhecendo-o-sistema-SAP-1",
-      title: "Conhecendo o sistema SAP - parte 1",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Conhecendo-o-sistema-SAP-2",
-      title: "Conhecendo o sistema SAP - parte 2",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Automatizando-tarefas-com-NodeJS-1",
-      title: "Automatizando tarefas com NodeJS e Puppeteer",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Automatizando-tarefas-com-NodeJS-2",
-      title: "Automatizando tarefas com NodeJS e Puppeteer",
-      createdAt: new Date().getTime(),
-    },
-  ];
+  const posts: any = PostService.getPosts(6);
 
   return {
     props: { personalInfo, projects, posts },

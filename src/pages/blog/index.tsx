@@ -1,5 +1,6 @@
 import Meta from "../../components/Meta";
 import PostCard from "../../components/PostCard";
+import PostService from "../../services/PostsService";
 import page from "../../styles/page";
 
 const styles = {
@@ -33,28 +34,7 @@ const blog = ({ posts }: any) => (
 export default blog;
 
 export function getStaticProps() {
-  const posts: any = [
-    {
-      slug: "Conhecendo-o-sistema-SAP-1",
-      title: "Conhecendo o sistema SAP - parte 1",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Conhecendo-o-sistema-SAP-2",
-      title: "Conhecendo o sistema SAP - parte 2",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Automatizando-tarefas-com-NodeJS-1",
-      title: "Automatizando tarefas com NodeJS e Puppeteer",
-      createdAt: new Date().getTime(),
-    },
-    {
-      slug: "Automatizando-tarefas-com-NodeJS-2",
-      title: "Automatizando tarefas com NodeJS e Puppeteer",
-      createdAt: new Date().getTime(),
-    },
-  ];
+  const posts: any = PostService.getAllPosts(["title", "createdAt", "slug"]);
 
   return {
     props: { posts },
