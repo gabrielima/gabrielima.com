@@ -5,12 +5,13 @@ import matter from "gray-matter";
 const postsDirectory = join(process.cwd(), "src", "posts");
 export default class PostService {
   static getPostSlugs() {
-    return fs.readdirSync(postsDirectory);
+    let slugs = fs.readdirSync(postsDirectory);
+    slugs = slugs.map((slug: string) => slug.replace(/\.md$/, ""));
+    return slugs;
   }
 
   static getPostBySlug(slug: string, fields: string[] = []) {
-    const realSlug = slug.replace(/\.md$/, "");
-    const fullPath = join(postsDirectory, `${realSlug}.md`);
+    const fullPath = join(postsDirectory, `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
@@ -19,7 +20,7 @@ export default class PostService {
     // Ensure only the minimal needed data is exposed
     fields.forEach((field: string) => {
       if (field === "slug") {
-        items[field] = realSlug;
+        items[field] = slug;
       }
       if (field === "content") {
         items[field] = content;
@@ -33,12 +34,16 @@ export default class PostService {
     return items;
   }
 
-  static getAllPosts(fields: string[] = []) {
+  static getPosts(fields: string[] = [], limit?: number) {
     const slugs = this.getPostSlugs();
-    const posts = slugs
+    let posts = slugs
       .map((slug) => this.getPostBySlug(slug, fields))
-      // sort posts by date in descending order
-      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+      .sort((post1, post2) => (post1.createdAt > post2.createdAt ? -1 : 1));
+
+    if (limit) {
+      posts = posts.slice(0, limit - 1);
+    }
+
     return posts;
   }
 }

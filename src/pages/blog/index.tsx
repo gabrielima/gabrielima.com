@@ -34,7 +34,7 @@ const blog = ({ posts }: any) => (
 export default blog;
 
 export function getStaticProps() {
-  const posts: any = PostService.getAllPosts(["title", "createdAt", "slug"]);
+  const posts: any = PostService.getPosts(["title", "createdAt", "slug"]);
 
   return {
     props: { posts },

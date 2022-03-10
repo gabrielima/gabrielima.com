@@ -59,13 +59,13 @@ const BlogPost = ({ post }: any) => {
 export default BlogPost;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = PostService.getAllPosts(["slug"]);
+  const slugs = PostService.getPostSlugs();
 
   return {
-    paths: posts.map((post) => {
+    paths: slugs.map((slug) => {
       return {
         params: {
-          slug: post.slug,
+          slug: slug,
         },
       };
     }),
