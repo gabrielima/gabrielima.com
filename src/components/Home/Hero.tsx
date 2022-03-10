@@ -20,7 +20,7 @@ const Hero = () => (
 
       <div className={styles.buttonGroup}>
         <div className="rounded-md shadow">
-          <a href="#" className={`${styles.button} ${styles.button1}`}>
+          <a href="#contact" className={`${styles.button} ${styles.button1}`}>
             Contact
           </a>
         </div>
