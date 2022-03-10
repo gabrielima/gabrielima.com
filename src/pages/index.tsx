@@ -17,8 +17,8 @@ const Home: NextPage = ({ personalInfo, projects }: any) => {
 
       <Hero />
       <About bio={personalInfo.bio} />
-      <Projects />
-      <Skills />
+      <Projects projects={projects.slice(0, 6)} />
+      <Skills skills={personalInfo.skills} />
       <Posts />
       <Contact />
     </>

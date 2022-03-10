@@ -1,7 +1,16 @@
-import React from "react";
+import section from "../../styles/section";
 
-const Posts = () => {
-  return <div>Posts</div>;
+const styles = {
+  posts: "bg-gray-500",
 };
+
+const Posts = ({ posts }: any) => (
+  <div className={section.container}>
+    <h3 className={section.title}>
+      Blog
+      <span className={section.titleUnderline}></span>
+    </h3>
+  </div>
+);
 
 export default Posts;

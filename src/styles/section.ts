@@ -1,6 +1,7 @@
 const section = {
-  title: "relative text-2xl font-bold text-gray-700 sm:text-3xl md:text-4xl",
-  titleUnderline: "absolute bottom-0 w-12 h-2 bg-sky-600 block -mb-2",
+  container: "max-w-5xl mx-auto lg:w-fullpx-4 px-6 lg:px-8 pt-12 lg:pt-22 xl:pt-22 pb-12 lg:pb-22 xl:pb-24",
+  title: "relative font-bold text-gray-700 text-2xl sm:text-3xl md:text-4xl mb-8 lg:mb-12",
+  titleUnderline: "absolute bottom-0 -mb-2 w-12 h-2 bg-sky-600 block",
 };
 
 export default section;

@@ -3,6 +3,7 @@ import "./../styles/globals.css";
 import Script from "next/script";
 import Head from "next/head";
 import Header from "../components/Layout/Header";
+import Footer from "../components/Layout/Footer";
 
 const GA_TRACKING_ID = "";
 
@@ -32,6 +33,7 @@ const App = ({ Component, pageProps }: any) => {
       />
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 };
