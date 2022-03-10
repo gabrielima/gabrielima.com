@@ -10,7 +10,7 @@ import Meta from "../components/Meta";
 import personalInfo from "../data/personal-info.json";
 import projects from "../data/projects.json";
 
-const Home: NextPage = ({ personalInfo, projects }: any) => {
+const Home: NextPage = ({ personalInfo, projects, posts }: any) => {
   return (
     <>
       <Meta />
@@ -19,8 +19,8 @@ const Home: NextPage = ({ personalInfo, projects }: any) => {
       <About bio={personalInfo.bio} />
       <Projects projects={projects.slice(0, 6)} />
       <Skills skills={personalInfo.skills} />
-      <Posts />
-      <Contact />
+      <Posts posts={posts} />
+      <Contact email={personalInfo.email} />
     </>
   );
 };
@@ -28,8 +28,31 @@ const Home: NextPage = ({ personalInfo, projects }: any) => {
 export default Home;
 
 export function getStaticProps() {
+  const posts: any = [
+    {
+      slug: "Conhecendo-o-sistema-SAP-1",
+      title: "Conhecendo o sistema SAP - parte 1",
+      createdAt: new Date().getTime(),
+    },
+    {
+      slug: "Conhecendo-o-sistema-SAP-2",
+      title: "Conhecendo o sistema SAP - parte 2",
+      createdAt: new Date().getTime(),
+    },
+    {
+      slug: "Automatizando-tarefas-com-NodeJS-1",
+      title: "Automatizando tarefas com NodeJS e Puppeteer",
+      createdAt: new Date().getTime(),
+    },
+    {
+      slug: "Automatizando-tarefas-com-NodeJS-2",
+      title: "Automatizando tarefas com NodeJS e Puppeteer",
+      createdAt: new Date().getTime(),
+    },
+  ];
+
   return {
-    props: { personalInfo, projects },
+    props: { personalInfo, projects, posts },
     revalidate: 5000,
   };
 }

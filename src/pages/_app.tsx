@@ -1,9 +1,14 @@
 import "./../styles/globals.css";
 
+import dayjs from "dayjs";
+import "dayjs/locale/pt-br";
+
 import Script from "next/script";
 import Head from "next/head";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
+
+dayjs.locale("pt-br");
 
 const GA_TRACKING_ID = "";
 

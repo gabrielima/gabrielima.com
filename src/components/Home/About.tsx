@@ -4,7 +4,8 @@ import section from "./../../styles/section";
 const styles = {
   about: "bg-sky-50",
   bio: "flex lg:items-center flex-col lg:flex-row",
-  bioImage: "max-w-[200px] lg:max-w-full lg:w-full",
+  bioImageWrapper: "max-w-[200px] lg:max-w-full lg:w-full",
+  bioImage: " rounded-md",
   bioText: "lg:pl-5 text-md md:text-lg",
 };
 const About = ({ bio }: any) => (
@@ -16,8 +17,8 @@ const About = ({ bio }: any) => (
       </h3>
 
       <div className={styles.bio}>
-        <div className={styles.bioImage}>
-          <Image src="/gabrielima.jpg" width={274} height={294} alt="Gabriel Lima" />
+        <div className={styles.bioImageWrapper}>
+          <Image className={styles.bioImage} src="/gabrielima.jpg" width={274} height={294} alt="Gabriel Lima" />
         </div>
         <div className={styles.bioText}>{bio}</div>
       </div>

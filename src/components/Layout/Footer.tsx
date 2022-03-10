@@ -1,8 +1,15 @@
 const styles = {
-  footer: "p-7 md:flex md:items-center md:justify-between md:p-10",
+  footer: "text-gray-700 p-7 md:flex md:items-center md:justify-between md:p-10",
   copyright: "text-sm sm:text-center",
   menu: "flex flex-wrap items-center mt-3 text-sm  sm:mt-0",
+  link: "hover:underline",
 };
+
+const navLinks: any = [
+  { href: "/", label: "Home" },
+  { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
+];
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -14,26 +21,13 @@ const Footer = () => (
       . All Rights Reserved.
     </span>
     <ul className={styles.menu}>
-      <li>
-        <a href="#" className="mr-4 hover:underline md:mr-6 ">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#" className="mr-4 hover:underline md:mr-6">
-          Privacy Policy
-        </a>
-      </li>
-      <li>
-        <a href="#" className="mr-4 hover:underline md:mr-6">
-          Licensing
-        </a>
-      </li>
-      <li>
-        <a href="#" className="hover:underline">
-          Contact
-        </a>
-      </li>
+      {navLinks.map((link: any, index: number) => (
+        <li key={index}>
+          <a href={link.href} className={`${styles.link} ${index < navLinks.length - 1 && "mr-4 md:mr-6"}`}>
+            {link.label}
+          </a>
+        </li>
+      ))}
     </ul>
   </footer>
 );

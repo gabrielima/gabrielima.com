@@ -10,7 +10,7 @@ const styles = {
   imgWrapper: "bg-gradient-to-b",
   img: "w-70%",
   title: "mt-3 text-lg",
-  stack: "mt-3 text-sm",
+  stack: "mt-3 text-sm text-gray-600",
 };
 
 const Projects = ({ projects }: any) => (
