@@ -6,7 +6,7 @@
     "online": true,
     "gradient": ["#8e0e00", "#1f1c18"],
     "link": "https://lyceudegoiania.com.br",
-    "stack": ["NextJS"]
+    "stack": ["Next.js", "Typescript", "Firebase"]
   },
   {
     "name": "Ex Toner",
@@ -15,13 +15,13 @@
     "online": true,
     "gradient": ["#3a7bd5", "#3a6073"],
     "link": "http://extoner.com.br",
-    "stack": ["NextJS"]
+    "stack": ["Next.js", "Typescript"]
   },
   {
     "name": "Timer/Cronômetro/Tabata",
     "type": "Web Application",
     "image": "/projects/actuar/timers.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#093028", "#237a57"],
     "link": "http://trei.no/timer",
     "stack": ["HTML5", "CSS3", "Angular 5", "Typescript", "RxJS"]
@@ -39,7 +39,7 @@
     "name": "Actuar Web",
     "type": "Web Application",
     "image": "/projects/actuar/actuar-web.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#41295a", "#2f0743"],
     "link": "https://actuar.com",
     "stack": [
@@ -58,7 +58,7 @@
     "name": "Trei.no",
     "type": "Hybrid Mobile Application",
     "image": "/projects/actuar/treino.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#09714b", "#092917"],
     "link": "https://trei.no",
     "stack": ["HTML5", "CSS3", "Angular 5", "Angular Material", "RxJS", "Cordova", "HammerJS"]
@@ -67,7 +67,7 @@
     "name": "Afig",
     "type": "Web Application",
     "image": "/projects/actuar/afig.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#11998e", "#38ef7d"],
     "link": "https://afig.actuar.com",
     "stack": [
@@ -121,7 +121,7 @@
     "name": "Bus Gyn",
     "type": "Progressive Web App",
     "image": "/projects/bus-gyn/bus-gyn.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#fe8c00", "#f83600"],
     "link": "http://gabrielima.github.io/bus-gyn",
     "stack": ["HTML5", "CSS3", "Javascript", "Service Workers"]
@@ -130,7 +130,7 @@
     "name": "MinhaUFG",
     "type": "Landing Page",
     "image": "/projects/minha-ufg/minha-ufg-landing.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#00c6ff", "#0072ff"],
     "link": "http://minha.ufg.br",
     "stack": ["HTML5", "SASS", "Javascript", "Material Design"]
@@ -139,7 +139,7 @@
     "name": "MinhaUFG- Admin",
     "type": "Web Application",
     "image": "/projects/minha-ufg/minha-ufg-admin.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#1A5D9D", "#0F527F"],
     "link": "http://minha.ufg.br/admin",
     "stack": ["HTML5", "SASS", "AngularJS", "Firebase", "Material Design"]
@@ -148,7 +148,7 @@
     "name": "MinhaUFG - PWA",
     "type": "Progressive Web App",
     "image": "/projects/minha-ufg/minha-ufg-pwa.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#00c6ff", "#2781BD"],
     "link": "http://minha.ufg.br/app",
     "stack": ["HTML5", "SASS", "Angular 4", "Firebase", "Material Design"]
@@ -157,7 +157,7 @@
     "name": "Image Editing",
     "type": "Web Application",
     "image": "/projects/image-editing/image-editing.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#E65F30", "#162937"],
     "link": "http://gabrielima.github.io/image-editing/",
     "stack": ["HTML5", "CSS3", "Javascript", "JQuery"]
@@ -166,7 +166,7 @@
     "name": "Calculadoria",
     "type": "Website",
     "image": "/projects/calculadoria/calculadoria.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#000428", "#004e92"],
     "link": "http://www.calculadoria.com.br/",
     "stack": ["HTML5", "CSS3", "Javascript"]
@@ -175,7 +175,7 @@
     "name": "Route 66",
     "type": "E-commerce - Only Front-End",
     "image": "/projects/route66/route66.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#AC3B44", "#F7D143"],
     "link": "http://route66mi.com.br",
     "stack": ["HTML5", "SASS", "Javascript", "JQuery"]
@@ -193,7 +193,7 @@
     "name": "FGSL - Fórum Goiano de Software Livre",
     "type": "Website",
     "image": "/projects/fgsl/fgsl.jpg",
-    "online": true,
+    "online": false,
     "gradient": ["#18292D", "#C8A240"],
     "link": "http://2016.fgsl.net",
     "stack": ["HTML5", "CSS3", "Javascript", "JQuery"]

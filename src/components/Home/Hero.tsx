@@ -1,7 +1,8 @@
 const styles = {
   hero: "max-w-7xl mx-auto lg:w-full pb-8 sm:pb-16 lg:pb-18 xl:pb-20 px-4 sm:px-6 lg:px-8 mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28",
   title: "text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl",
-  subtitle: "mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl mx-auto md:mt-5 md:text-xl",
+  subtitle:
+    "mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl mx-auto md:mt-5 md:text-xl",
   button:
     "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md",
   button1: "text-white bg-sky-600 hover:bg-sky-700 md:text-lg",
@@ -25,7 +26,11 @@ const Hero = () => (
           </a>
         </div>
         <div className="mt-3 sm:mt-0 sm:ml-3">
-          <a href="#" className={`${styles.button} ${styles.button2}`}>
+          <a
+            href="/Resume - Gabriel de Lima Rabelo.pdf"
+            className={`${styles.button} ${styles.button2}`}
+            target="_blank"
+            rel="noreferrer">
             Resume
           </a>
         </div>

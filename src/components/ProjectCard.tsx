@@ -5,18 +5,35 @@ const styles = {
   item: "flex flex-col text-center px-4 py-3 bg-white rounded-md shadow-md",
   itemDisabled: "pointer-events-none",
   img: "w-70%",
-  title: "mt-3 text-lg",
+  title: "mt-3 text-lg mr-2",
   stack: "mt-3 text-sm text-gray-600",
+  badge: "bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded",
+  badgeDanger: "dark:bg-red-200 dark:text-red-900",
+  badgeSuccess: "dark:bg-green-200 dark:text-green-900",
 };
 
 const ProjectCard = ({ project }: any) => (
   <a
     href={project.link}
-    className={`${styles.item} ${!project.link && styles.itemDisabled}`}
+    className={`${styles.item} ${!project.online && styles.itemDisabled}`}
     target="_blank"
     rel="noopener nofollow">
-    <Image width={250} height={190} src={project.image} alt={project.name} className={styles.img} />
+    <div>
+      <Image
+        width={250}
+        height={190}
+        src={project.image}
+        alt={project.name}
+        className={styles.img}
+      />
+    </div>
     <span className={styles.title}>{project.name}</span>
+    <div>
+      <span
+        className={`${styles.badge} ${project.online ? styles.badgeSuccess : styles.badgeDanger}`}>
+        {project.online ? "Online" : "Offline"}
+      </span>
+    </div>
     <span className={styles.stack}>{project.stack.join(" - ")}</span>
   </a>
 );
