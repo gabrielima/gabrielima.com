@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 const styles = {
-  item: "flex flex-col text-center px-4 py-3 bg-white rounded-md shadow-md",
-  itemDisabled: "pointer-events-none",
+  card: "flex flex-col text-center px-4 pt-3 pb-4 bg-white rounded-md shadow-md",
+  disabled: "pointer-events-none",
   img: "w-70%",
   title: "mt-3 text-lg mr-2",
   stack: "mt-3 text-sm text-gray-600",
@@ -15,7 +15,7 @@ const styles = {
 const ProjectCard = ({ project }: any) => (
   <a
     href={project.link}
-    className={`${styles.item} ${!project.online && styles.itemDisabled}`}
+    className={`${styles.card} ${!project.online && styles.disabled}`}
     target="_blank"
     rel="noopener nofollow">
     <div>

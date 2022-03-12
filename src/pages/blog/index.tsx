@@ -5,7 +5,7 @@ import page from "../../styles/page";
 
 const styles = {
   container: "max-w-7xl mx-auto w-full",
-  list: "grid gap-10 grid-cols-1 lg:grid-cols-2",
+  list: "grid gap-5 grid-cols-1 lg:grid-cols-2",
 };
 
 const blog = ({ posts }: any) => (

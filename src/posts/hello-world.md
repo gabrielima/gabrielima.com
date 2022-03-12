@@ -1,6 +1,6 @@
 ---
 title: 'Hello World'
-createdAt: '2022-03-10'
+createdAt: '2022-03-10T18:00:00'
 ---
 
 The last version of this website was deployed exactly 4 years ago. The blog section had a "Work in Progress" message that was not supposed to last long.

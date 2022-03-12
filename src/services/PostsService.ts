@@ -38,7 +38,7 @@ export default class PostService {
     const slugs = this.getPostSlugs();
     let posts = slugs
       .map((slug) => this.getPostBySlug(slug, fields))
-      .sort((post1, post2) => (post1.createdAt > post2.createdAt ? -1 : 1));
+      .sort((post1, post2) => (new Date(post1.createdAt) > new Date(post2.createdAt) ? -1 : 1));
 
     if (limit) {
       posts = posts.slice(0, limit - 1);
