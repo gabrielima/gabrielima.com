@@ -1,46 +1,134 @@
 [
   {
+    "name": "WAX Capital - Conciliação",
+    "image": "/projects/wax-capital/wax-capita.png",
+    "online": true,
+    "link": "https://wax-capital.com/conciliacao.html",
+    "stack": ["HTML5", "CSS", "Bootstrap 5"]
+  },
+  {
+    "name": "Blanki",
+    "image": "/projects/blanki/blanki.png",
+    "online": true,
+    "link": "https://www.blanki.com.br/",
+    "stack": ["HTML5", "CSS", "Bootstrap 4"]
+  },
+  {
+    "name": "EasyCrédito",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://easycredito.com.br/",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "PIKI Empréstimos",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://piki.com.br/",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "OLX Empréstimos",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://emprestimos.olx.com.br/",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "EasyCrédito Indique e Ganhe",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://easycredito.com.br/indique-e-ganhe",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "Momento Finanças",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://momentofinancas.com.br/",
+    "stack": ["Wordpress"]
+  },
+  {
+    "name": "Méliuz Emprestimos",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://emprestimos.meliuz.com.br/",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "BNDES Empréstimos",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://bndes.easycredito.com.br/",
+    "stack": ["Ruby on Rails", "JQuery", "SASS"]
+  },
+  {
+    "name": "Studio Martins",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://studiomartins.com.br/",
+    "stack": ["HTML5", "CSS", "Bootstrap 5"]
+  },
+  {
+    "name": "Solarenge",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://solarenge.com.br/",
+    "stack": ["Wordpress"]
+  },
+  {
+    "name": "Referr.US Url Shortener",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://app.referr.us/",
+    "stack": ["Grails", "Groovy", "CSS"]
+  },
+  {
+    "name": "Emagrecimento",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "https://emagrecimento.tubarato.com.br/",
+    "stack": ["Next.js", "Typescript", "Chakra UI"]
+  },
+  {
+    "name": "Sitio Candora",
+    "image": "/projects/wax",
+    "online": true,
+    "link": "http://www.sitiocandora.com.br/",
+    "stack": ["HTML5", "CSS", "Bootstrap 4"]
+  },
+  {
     "name": "Lyceu de Goiânia",
-    "type": "Website",
     "image": "/projects/lyceu/lyceu.jpg",
     "online": true,
-    "gradient": ["#8e0e00", "#1f1c18"],
     "link": "https://lyceudegoiania.com.br",
     "stack": ["Next.js", "Typescript", "Firebase"]
   },
   {
     "name": "Ex Toner",
-    "type": "Website",
     "image": "/projects/extoner/extoner.jpg",
     "online": true,
-    "gradient": ["#3a7bd5", "#3a6073"],
     "link": "http://extoner.com.br",
     "stack": ["Next.js", "Typescript"]
   },
   {
     "name": "Timer/Cronômetro/Tabata",
-    "type": "Web Application",
     "image": "/projects/actuar/timers.jpg",
     "online": false,
-    "gradient": ["#093028", "#237a57"],
     "link": "http://trei.no/timer",
     "stack": ["HTML5", "CSS3", "Angular 5", "Typescript", "RxJS"]
   },
   {
     "name": "Actuar - Plano Impacto",
-    "type": "Landing Page",
     "image": "/projects/actuar/plano-impacto.jpg",
     "online": false,
-    "gradient": ["#232526", "#414345"],
     "link": "https://actuar.com/planoimpacto",
     "stack": ["HTML5", "CSS3", "JQuery", "Babel", "Web Audio API"]
   },
   {
     "name": "Actuar Web",
-    "type": "Web Application",
     "image": "/projects/actuar/actuar-web.jpg",
     "online": false,
-    "gradient": ["#41295a", "#2f0743"],
     "link": "https://actuar.com",
     "stack": [
       "HTML5",
@@ -56,19 +144,15 @@
   },
   {
     "name": "Trei.no",
-    "type": "Hybrid Mobile Application",
     "image": "/projects/actuar/treino.jpg",
     "online": false,
-    "gradient": ["#09714b", "#092917"],
     "link": "https://trei.no",
     "stack": ["HTML5", "CSS3", "Angular 5", "Angular Material", "RxJS", "Cordova", "HammerJS"]
   },
   {
     "name": "Afig",
-    "type": "Web Application",
     "image": "/projects/actuar/afig.jpg",
     "online": false,
-    "gradient": ["#11998e", "#38ef7d"],
     "link": "https://afig.actuar.com",
     "stack": [
       "HTML5",
@@ -83,19 +167,15 @@
   },
   {
     "name": "Deputado Estadual Gustavo Sebba",
-    "type": "Website",
     "image": "/projects/gustavo-sebba/gustavo-sebba.jpg",
     "online": false,
-    "gradient": ["#000046", "#1cb5e0"],
     "link": "http://www.gustavosebba.com.br",
     "stack": ["HTML5", "CSS3", "Wordpress"]
   },
   {
     "name": "Manutenção de Índices",
-    "type": "Web Application",
     "image": "/projects/indices/indices.jpg",
     "online": false,
-    "gradient": ["#abbaab", "#ffffff"],
     "link": "",
     "stack": [
       "HTML5",
@@ -110,127 +190,99 @@
   },
   {
     "name": "Portal Telemedicina",
-    "type": "Web Application",
     "image": "/projects/portal-telemedicina/portal-telemedicina.jpg",
     "online": false,
-    "gradient": ["#f2fcfe", "#1c92d2"],
     "link": "",
     "stack": ["HTML5", "CSS3", "AngularJS", "Angular Material", "Charts.JS"]
   },
   {
     "name": "Bus Gyn",
-    "type": "Progressive Web App",
     "image": "/projects/bus-gyn/bus-gyn.jpg",
     "online": false,
-    "gradient": ["#fe8c00", "#f83600"],
     "link": "http://gabrielima.github.io/bus-gyn",
     "stack": ["HTML5", "CSS3", "Javascript", "Service Workers"]
   },
   {
     "name": "MinhaUFG",
-    "type": "Landing Page",
     "image": "/projects/minha-ufg/minha-ufg-landing.jpg",
     "online": false,
-    "gradient": ["#00c6ff", "#0072ff"],
     "link": "http://minha.ufg.br",
     "stack": ["HTML5", "SASS", "Javascript", "Material Design"]
   },
   {
     "name": "MinhaUFG- Admin",
-    "type": "Web Application",
     "image": "/projects/minha-ufg/minha-ufg-admin.jpg",
     "online": false,
-    "gradient": ["#1A5D9D", "#0F527F"],
     "link": "http://minha.ufg.br/admin",
     "stack": ["HTML5", "SASS", "AngularJS", "Firebase", "Material Design"]
   },
   {
     "name": "MinhaUFG - PWA",
-    "type": "Progressive Web App",
     "image": "/projects/minha-ufg/minha-ufg-pwa.jpg",
     "online": false,
-    "gradient": ["#00c6ff", "#2781BD"],
     "link": "http://minha.ufg.br/app",
     "stack": ["HTML5", "SASS", "Angular 4", "Firebase", "Material Design"]
   },
   {
     "name": "Image Editing",
-    "type": "Web Application",
     "image": "/projects/image-editing/image-editing.jpg",
     "online": false,
-    "gradient": ["#E65F30", "#162937"],
     "link": "http://gabrielima.github.io/image-editing/",
     "stack": ["HTML5", "CSS3", "Javascript", "JQuery"]
   },
   {
     "name": "Calculadoria",
-    "type": "Website",
     "image": "/projects/calculadoria/calculadoria.jpg",
     "online": false,
-    "gradient": ["#000428", "#004e92"],
     "link": "http://www.calculadoria.com.br/",
     "stack": ["HTML5", "CSS3", "Javascript"]
   },
   {
     "name": "Route 66",
-    "type": "E-commerce - Only Front-End",
     "image": "/projects/route66/route66.jpg",
     "online": false,
-    "gradient": ["#AC3B44", "#F7D143"],
     "link": "http://route66mi.com.br",
     "stack": ["HTML5", "SASS", "Javascript", "JQuery"]
   },
   {
     "name": "Hurricane Evolution",
-    "type": "E-commerce - Only Front-End",
     "image": "/projects/hurricane/hurricane.jpg",
     "online": false,
-    "gradient": ["#F5F2ED", "#722D2E"],
     "link": "",
     "stack": ["HTML5", "SASS", "Javascript", "JQuery"]
   },
   {
     "name": "FGSL - Fórum Goiano de Software Livre",
-    "type": "Website",
     "image": "/projects/fgsl/fgsl.jpg",
     "online": false,
-    "gradient": ["#18292D", "#C8A240"],
     "link": "http://2016.fgsl.net",
     "stack": ["HTML5", "CSS3", "Javascript", "JQuery"]
   },
   {
     "name": "Ribeiro Advocacia",
-    "type": "Website",
     "image": "/projects/ribeiro/ribeiro.jpg",
     "online": false,
-    "gradient": ["#1A1A1A", "#33A66D"],
     "link": "http://ribeirosadvocacia.adv.br",
     "stack": ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"]
   },
   {
     "name": "Mounza Inc.",
-    "type": "Landing Page",
     "image": "/projects/mounza/mounza.jpg",
     "online": false,
-    "gradient": ["#1A1A1A", "#48B2E2"],
     "link": "",
     "stack": ["HTML5", "CSS3", "Javascript", "JQuery"]
   },
   {
     "name": "Trak",
-    "type": "Web Application",
     "image": "/projects/trak/trak.jpg",
     "online": false,
-    "gradient": ["#A82A48", "#A62D49"],
     "link": "",
     "stack": ["HTML5", "CSS3", "AngularJS", "PHP", "MySQL"]
   },
   {
     "name": "Alves, Carneiro & Lima",
-    "type": "Website",
     "image": "/projects/alves/alves.jpg",
     "online": false,
-    "gradient": ["#6f0000", "#200122"],
     "link": "",
     "stack": ["HTML5", "CSS3", "Javascript", "PHP", "MySQL"]
   }

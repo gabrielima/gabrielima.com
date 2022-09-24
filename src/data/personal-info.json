@@ -5,26 +5,19 @@
     {
       "area": "Front-End",
       "skills": [
-        "HTML5",
-        "CSS3",
         "Javascript",
-        "AngularJS / Angular 2+",
-        "Angular Material",
         "Typescript",
-        "RxJS",
         "ReactJS",
         "NextJS",
-        "Styled-components",
-        "VueJS",
+        "AngularJS / Angular 2+",
         "JQuery",
-        "SASS/LESS",
-        "Twitter Bootstrap",
-        "Gulp"
+        "SASS",
+        "Bootstrap"
       ]
     },
     {
       "area": "Back-End",
-      "skills": ["NodeJS", "ExpressJS", "PHP", "Java", "Spring Boot"]
+      "skills": ["Node.js", "Express.js", "Ruby on Rails", "PHP", "WordPress", "Java", "Spring Boot"]
     },
     {
       "area": "Mobile",
