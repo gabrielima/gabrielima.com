@@ -72,6 +72,17 @@ section h3 + p {
 	margin-top: 20px;
 }
 
+#about nav a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+	margin: 0 16px 0;
+}
+
+#about nav a:first-child {
+	margin-left: 0;
+}
+
 #projects {
 	background-color: rgb(241, 245, 249);
 	color: rgb(15, 23, 42);
