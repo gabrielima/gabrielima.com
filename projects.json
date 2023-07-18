@@ -1,161 +1,161 @@
 [
   {
     "name": "Beri Studio",
-    "image": "/projects/beri/beri.png",
+    "image": "beri/beri.png",
     "online": true,
     "link": "https://beristudio.com.br",
     "stack": ["Wordpress"]
   },
   {
-    "name": "Antuérpia Capital",
-    "image": "/projects/antuerpia/antuerpia.png",
-    "online": false,
-    "link": "",
-    "stack": ["PHP", "Bootstrap 5"]
-  },
-  {
     "name": "Vivá Vinhos",
-    "image": "/projects/vivavinhos/vivavinhos.png",
+    "image": "vivavinhos/vivavinhos.png",
     "online": true,
     "link": "https://vivavinhos.com.br",
     "stack": ["Wordpress"]
   },
   {
     "name": "Nius",
-    "image": "/projects/nius/nius.png",
+    "image": "nius/nius.png",
     "online": true,
     "link": "https://nius.com.br",
     "stack": ["Wordpress", "Bootstrap 5"]
   },
   {
     "name": "Portal Transmissão Política",
-    "image": "/projects/portal-transmissao-politica/portal-transmissao-politica.png",
+    "image": "portal-transmissao-politica/portal-transmissao-politica.png",
     "online": true,
     "link": "https://transmissaopolitica.com.br",
     "stack": ["Wordpress", "Bootstrap 5"]
   },
   {
     "name": "WAX Capital - Conciliação",
-    "image": "/projects/wax-capital/wax-capital.png",
+    "image": "wax-capital/wax-capital.png",
     "online": true,
     "link": "https://wax-capital.com/conciliacao.html",
     "stack": ["PHP", "Bootstrap 5"]
   },
   {
     "name": "Blanki",
-    "image": "/projects/blanki/blanki.png",
+    "image": "blanki/blanki.png",
     "online": true,
     "link": "https://www.blanki.com.br/",
     "stack": ["PHP", "Bootstrap 4"]
   },
   {
+    "name": "Antuérpia Capital",
+    "image": "antuerpia/antuerpia.png",
+    "online": false,
+    "link": "",
+    "stack": ["PHP", "Bootstrap 5"]
+  },
+  {
     "name": "EasyCrédito",
-    "image": "/projects/easycredito/easycredito.png",
+    "image": "easycredito/easycredito.png",
     "online": true,
     "link": "https://easycredito.com.br/",
     "stack": ["Ruby on Rails", "JQuery", "SASS"]
   },
   {
     "name": "PIKI Empréstimos",
-    "image": "/projects/easycredito/easycredito-piki.png",
+    "image": "easycredito/easycredito-piki.png",
     "online": true,
     "link": "https://piki.com.br/",
     "stack": ["Ruby on Rails", "JQuery", "SASS"]
   },
   {
     "name": "OLX Empréstimos",
-    "image": "/projects/easycredito/easycredito-olx.png",
+    "image": "easycredito/easycredito-olx.png",
     "online": true,
     "link": "https://emprestimos.olx.com.br/",
     "stack": ["Ruby on Rails", "JQuery", "SASS"]
   },
   {
     "name": "EasyCrédito Indique e Ganhe",
-    "image": "/projects/easycredito/easycredito-indique-e-ganhe.png",
+    "image": "easycredito/easycredito-indique-e-ganhe.png",
     "online": true,
     "link": "https://easycredito.com.br/indique-e-ganhe",
     "stack": ["Ruby on Rails", "JQuery", "SASS"]
   },
   {
     "name": "Momento Finanças",
-    "image": "/projects/easycredito/easycredito-momento-financas.png",
+    "image": "easycredito/easycredito-momento-financas.png",
     "online": true,
     "link": "https://momentofinancas.com.br/",
     "stack": ["Wordpress"]
   },
   {
     "name": "BNDES Empréstimos",
-    "image": "/projects/easycredito/easycredito-bndes.png",
+    "image": "easycredito/easycredito-bndes.png",
     "online": true,
     "link": "https://bndes.easycredito.com.br/",
     "stack": ["Ruby on Rails", "JQuery", "SASS"]
   },
   {
     "name": "Studio Martins",
-    "image": "/projects/studio-martings/studio-martins.png",
+    "image": "studio-martings/studio-martins.png",
     "online": true,
     "link": "https://studiomartins.com.br/",
     "stack": ["HTML", "CSS", "Bootstrap 5"]
   },
   {
     "name": "Solarenge",
-    "image": "/projects/solarenge/solarenge.png",
+    "image": "solarenge/solarenge.png",
     "online": true,
     "link": "https://solarenge.com.br/",
     "stack": ["Wordpress"]
   },
   {
     "name": "Referr.US Url Shortener",
-    "image": "/projects/referr-us/referr-us.png",
+    "image": "referr-us/referr-us.png",
     "online": true,
     "link": "https://app.referr.us/",
     "stack": ["Grails", "Groovy", "CSS"]
   },
   {
     "name": "Emagrecimento",
-    "image": "/projects/tubarato/emagrecimento-tubarato.png",
+    "image": "tubarato/emagrecimento-tubarato.png",
     "online": true,
     "link": "https://emagrecimento.tubarato.com.br/",
     "stack": ["Next.js", "Typescript", "Chakra UI"]
   },
   {
     "name": "Sitio Candora",
-    "image": "/projects/sitio-candorra/sitio-candorra.png",
+    "image": "sitio-candorra/sitio-candorra.png",
     "online": true,
     "link": "http://www.sitiocandora.com.br/",
     "stack": ["HTML", "CSS", "Bootstrap 4"]
   },
   {
     "name": "Lyceu de Goiânia",
-    "image": "/projects/lyceu/lyceu.jpg",
+    "image": "lyceu/lyceu.jpg",
     "online": true,
     "link": "https://lyceudegoiania.com.br",
     "stack": ["Next.js", "Typescript", "Firebase"]
   },
   {
     "name": "Ex Toner",
-    "image": "/projects/extoner/extoner.jpg",
+    "image": "extoner/extoner.jpg",
     "online": true,
     "link": "http://extoner.com.br",
     "stack": ["Next.js", "Typescript"]
   },
   {
     "name": "Timer/Cronômetro/Tabata",
-    "image": "/projects/actuar/timers.jpg",
+    "image": "actuar/timers.jpg",
     "online": false,
     "link": "http://trei.no/timer",
     "stack": ["HTML", "CSS", "Angular 5", "Typescript", "RxJS"]
   },
   {
     "name": "Actuar - Plano Impacto",
-    "image": "/projects/actuar/plano-impacto.jpg",
+    "image": "actuar/plano-impacto.jpg",
     "online": false,
     "link": "https://actuar.com/planoimpacto",
     "stack": ["HTML", "CSS", "JQuery", "Babel", "Web Audio API"]
   },
   {
     "name": "Actuar Web",
-    "image": "/projects/actuar/actuar-web.jpg",
+    "image": "actuar/actuar-web.jpg",
     "online": false,
     "link": "https://actuar.com",
     "stack": [
@@ -172,7 +172,7 @@
   },
   {
     "name": "Trei.no",
-    "image": "/projects/actuar/treino.jpg",
+    "image": "actuar/treino.jpg",
     "online": false,
     "link": "https://trei.no",
     "stack": [
@@ -187,7 +187,7 @@
   },
   {
     "name": "Afig",
-    "image": "/projects/actuar/afig.jpg",
+    "image": "actuar/afig.jpg",
     "online": false,
     "link": "https://afig.actuar.com",
     "stack": [
@@ -203,14 +203,14 @@
   },
   {
     "name": "Deputado Estadual Gustavo Sebba",
-    "image": "/projects/gustavo-sebba/gustavo-sebba.jpg",
+    "image": "gustavo-sebba/gustavo-sebba.jpg",
     "online": false,
     "link": "http://www.gustavosebba.com.br",
     "stack": ["HTML", "CSS", "Wordpress"]
   },
   {
     "name": "Manutenção de Índices",
-    "image": "/projects/indices/indices.jpg",
+    "image": "indices/indices.jpg",
     "online": false,
     "link": "",
     "stack": [
@@ -226,98 +226,98 @@
   },
   {
     "name": "Portal Telemedicina",
-    "image": "/projects/portal-telemedicina/portal-telemedicina.jpg",
+    "image": "portal-telemedicina/portal-telemedicina.jpg",
     "online": false,
     "link": "",
     "stack": ["HTML", "CSS", "AngularJS", "Angular Material", "Charts.JS"]
   },
   {
     "name": "Bus Gyn",
-    "image": "/projects/bus-gyn/bus-gyn.jpg",
+    "image": "bus-gyn/bus-gyn.jpg",
     "online": false,
     "link": "http://gabrielima.github.io/bus-gyn",
     "stack": ["HTML", "CSS", "Javascript", "Service Workers"]
   },
   {
     "name": "MinhaUFG",
-    "image": "/projects/minha-ufg/minha-ufg-landing.jpg",
+    "image": "minha-ufg/minha-ufg-landing.jpg",
     "online": false,
     "link": "http://minha.ufg.br",
     "stack": ["HTML", "SASS", "Javascript", "Material Design"]
   },
   {
     "name": "MinhaUFG- Admin",
-    "image": "/projects/minha-ufg/minha-ufg-admin.jpg",
+    "image": "minha-ufg/minha-ufg-admin.jpg",
     "online": false,
     "link": "http://minha.ufg.br/admin",
     "stack": ["HTML", "SASS", "AngularJS", "Firebase", "Material Design"]
   },
   {
     "name": "MinhaUFG - PWA",
-    "image": "/projects/minha-ufg/minha-ufg-pwa.jpg",
+    "image": "minha-ufg/minha-ufg-pwa.jpg",
     "online": false,
     "link": "http://minha.ufg.br/app",
     "stack": ["HTML", "SASS", "Angular 4", "Firebase", "Material Design"]
   },
   {
     "name": "Image Editing",
-    "image": "/projects/image-editing/image-editing.jpg",
+    "image": "image-editing/image-editing.jpg",
     "online": false,
     "link": "http://gabrielima.github.io/image-editing/",
     "stack": ["HTML", "CSS", "Javascript", "JQuery"]
   },
   {
     "name": "Calculadoria",
-    "image": "/projects/calculadoria/calculadoria.jpg",
+    "image": "calculadoria/calculadoria.jpg",
     "online": false,
     "link": "http://www.calculadoria.com.br/",
     "stack": ["HTML", "CSS", "Javascript"]
   },
   {
     "name": "Route 66",
-    "image": "/projects/route66/route66.jpg",
+    "image": "route66/route66.jpg",
     "online": false,
     "link": "http://route66mi.com.br",
     "stack": ["HTML", "SASS", "Javascript", "JQuery"]
   },
   {
     "name": "Hurricane Evolution",
-    "image": "/projects/hurricane/hurricane.jpg",
+    "image": "hurricane/hurricane.jpg",
     "online": false,
     "link": "",
     "stack": ["HTML", "SASS", "Javascript", "JQuery"]
   },
   {
     "name": "FGSL - Fórum Goiano de Software Livre",
-    "image": "/projects/fgsl/fgsl.jpg",
+    "image": "fgsl/fgsl.jpg",
     "online": false,
     "link": "http://2016.fgsl.net",
     "stack": ["HTML", "CSS", "Javascript", "JQuery"]
   },
   {
     "name": "Ribeiro Advocacia",
-    "image": "/projects/ribeiro/ribeiro.jpg",
+    "image": "ribeiro/ribeiro.jpg",
     "online": false,
     "link": "http://ribeirosadvocacia.adv.br",
     "stack": ["HTML", "CSS", "Javascript", "PHP", "MySQL"]
   },
   {
     "name": "Mounza Inc.",
-    "image": "/projects/mounza/mounza.jpg",
+    "image": "mounza/mounza.jpg",
     "online": false,
     "link": "",
     "stack": ["HTML", "CSS", "Javascript", "JQuery"]
   },
   {
     "name": "Trak",
-    "image": "/projects/trak/trak.jpg",
+    "image": "trak/trak.jpg",
     "online": false,
     "link": "",
     "stack": ["HTML", "CSS", "AngularJS", "PHP", "MySQL"]
   },
   {
     "name": "Alves, Carneiro & Lima",
-    "image": "/projects/alves/alves.jpg",
+    "image": "alves/alves.jpg",
     "online": false,
     "link": "",
     "stack": ["HTML", "CSS", "Javascript", "PHP", "MySQL"]

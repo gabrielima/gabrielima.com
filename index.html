@@ -45,19 +45,19 @@
           browser extensions with <b>Typescript</b>.</small></p>
 
       <nav>
-        <a target="_blank" rel="noopener nofollow" href="assets\Resume - Gabriel de Lima Rabelo.pdf">
+        <a target="_blank" href="assets\Resume - Gabriel de Lima Rabelo.pdf">
           Resume
         </a>
         |
-        <a target="_blank" rel="noopener nofollow" href="https://twitter.com/rabeloglr">
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/rabeloglr">
           Twitter
         </a>
         |
-        <a target="_blank" rel="noopener nofollow" href="https://github.com/gabrielima">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/gabrielima">
           Github
         </a>
         |
-        <a target="_blank" rel="noopener nofollow" href="https://www.linkedin.com/in/gabrielima">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gabrielima">
           Linkedin
         </a>
       </nav>
@@ -70,7 +70,7 @@
 
       <div class="projects">
         <template>
-          <a href="%link" target="_blank" class="project-card">
+          <a href="%link" target="_blank" rel="noopener noreferrer" class="project-card">
             <img src="%image" alt="%name" loading="lazy">
             <p>
               <span>%name</span>
@@ -82,7 +82,7 @@
     </section>
 
     <section id="contact">
-      <h3>Contact</h3>
+      <h3>Get in touch</h3>
       <p>I am open for new opportunities in web development (remote only).</p>
       <a
         href="javascript:location='mailto:\u0072\u0061\u0062\u0065\u006c\u006f\u0067\u006c\u0072\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">
@@ -100,47 +100,68 @@
 
   <script>
     const projects = [
-        {
+      {
+        name: "Ex Toner",
+        image: "extoner/extoner.jpg",
+        online: true,
+        link: "http://extoner.com.br",
+        stack: ["Next.js", "Typescript", "Firebase"]
+      },
+      {
         name: "Beri Studio",
-        image: "assets/projects/beri/beri.png",
+        image: "beri/beri.png",
         online: true,
         link: "https://beristudio.com.br",
         stack: ["Wordpress"]
       },
       {
         name: "Vivá Vinhos",
-        image: "assets/projects/vivavinhos/vivavinhos.png",
+        image: "vivavinhos/vivavinhos.png",
         online: true,
         link: "https://vivavinhos.com.br",
         stack: ["Wordpress"]
       },
       {
         name: "Portal Transmissão Política",
-        image: "assets/projects/portal-transmissao-politica/portal-transmissao-politica.png",
+        image: "portal-transmissao-politica/portal-transmissao-politica.png",
         online: true,
         link: "https://transmissaopolitica.com.br",
         stack: ["Wordpress", "Bootstrap 5"]
       },
       {
         name: 'WAX Capital - Conciliação',
-        image: 'assets/projects/wax-capital/wax-capital.png',
+        image: 'wax-capital/wax-capital.png',
         online: true,
         link: 'https://wax-capital.com/conciliacao.html',
         stack: ['HTML5', 'CSS', 'Bootstrap 5'],
       },
       {
         name: 'Blanki',
-        image: 'assets/projects/blanki/blanki.png',
+        image: 'blanki/blanki.png',
         online: true,
         link: 'https://www.blanki.com.br/',
         stack: ['HTML5', 'CSS', 'Bootstrap 4'],
       },
       {
         name: 'EasyCrédito',
-        image: 'assets/projects/easycredito/easycredito.png',
+        image: 'easycredito/easycredito.png',
         online: true,
         link: 'https://easycredito.com.br/',
         stack: ['Ruby on Rails', 'JQuery', 'SASS'],
+      },
+      {
+        name: "EasyCrédito Indique e Ganhe",
+        image: "easycredito/easycredito-indique-e-ganhe.png",
+        online: true,
+        link: "https://easycredito.com.br/indique-e-ganhe",
+        stack: ["Ruby on Rails", "JQuery", "SASS"]
+      },
+      {
+        name: "BNDES Empréstimos",
+        image: "easycredito/easycredito-bndes.png",
+        online: true,
+        link: "https://bndes.easycredito.com.br/",
+        stack: ["Ruby on Rails", "JQuery", "SASS"]
       },
     ];
 
@@ -150,7 +171,7 @@
       .map((p) => {
         return projectCardTemplate
           .replaceAll('%link', p.link)
-          .replaceAll('%image', p.image)
+          .replaceAll('%image', "assets/projects/" + p.image)
           .replaceAll('%name', p.name)
           .replaceAll('%stack', p.stack.join(', '));
       })
