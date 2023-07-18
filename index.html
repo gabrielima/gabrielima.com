@@ -98,7 +98,64 @@
     </p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script>
+    const projects = [
+        {
+        name: "Beri Studio",
+        image: "assets/projects/beri/beri.png",
+        online: true,
+        link: "https://beristudio.com.br",
+        stack: ["Wordpress"]
+      },
+      {
+        name: "Vivá Vinhos",
+        image: "assets/projects/vivavinhos/vivavinhos.png",
+        online: true,
+        link: "https://vivavinhos.com.br",
+        stack: ["Wordpress"]
+      },
+      {
+        name: "Portal Transmissão Política",
+        image: "assets/projects/portal-transmissao-politica/portal-transmissao-politica.png",
+        online: true,
+        link: "https://transmissaopolitica.com.br",
+        stack: ["Wordpress", "Bootstrap 5"]
+      },
+      {
+        name: 'WAX Capital - Conciliação',
+        image: 'assets/projects/wax-capital/wax-capital.png',
+        online: true,
+        link: 'https://wax-capital.com/conciliacao.html',
+        stack: ['HTML5', 'CSS', 'Bootstrap 5'],
+      },
+      {
+        name: 'Blanki',
+        image: 'assets/projects/blanki/blanki.png',
+        online: true,
+        link: 'https://www.blanki.com.br/',
+        stack: ['HTML5', 'CSS', 'Bootstrap 4'],
+      },
+      {
+        name: 'EasyCrédito',
+        image: 'assets/projects/easycredito/easycredito.png',
+        online: true,
+        link: 'https://easycredito.com.br/',
+        stack: ['Ruby on Rails', 'JQuery', 'SASS'],
+      },
+    ];
+
+    const projectCardTemplate = document.querySelector('template').innerHTML;
+
+    document.querySelector('.projects').innerHTML = projects
+      .map((p) => {
+        return projectCardTemplate
+          .replaceAll('%link', p.link)
+          .replaceAll('%image', p.image)
+          .replaceAll('%name', p.name)
+          .replaceAll('%stack', p.stack.join(', '));
+      })
+      .join('\n');
+  </script>
 </body>
 
 </html>
